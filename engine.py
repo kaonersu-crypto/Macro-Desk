@@ -8,7 +8,7 @@ Writes docs/bias.json (read by docs/index.html) and appends to docs/history.json
 Each driver scores from -1 (bearish for the asset) to +1 (bullish). Weights are judgment
 calls, not fitted to data. Backtest them against docs/history.json before trusting them.
 """
-import argparse, json, os, urllib.parse, urllib.request
+import argparse, json, os, time, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timezone
 
 MINUS = "\u2212"
@@ -347,8 +347,28 @@ def score(inp):
 
 # ---------------- live data ----------------
 def _get(url):
-    with urllib.request.urlopen(url, timeout=30) as r:
-        return json.load(r)
+    try:
+        with urllib.request.urlopen(url, timeout=30) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "ignore")[:300]
+        raise RuntimeError(f"HTTP {e.code} from {url.split('?')[0]}: {body}") from None
+
+
+AV_GAP = 13  # seconds between Alpha Vantage calls: the free key allows 5 a minute
+_last_av = [0.0]
+
+
+def av_get(params, ak):
+    wait = AV_GAP - (time.time() - _last_av[0])
+    if wait > 0:
+        time.sleep(wait)
+    data = _get("https://www.alphavantage.co/query?" + urllib.parse.urlencode({**params, "apikey": ak}))
+    _last_av[0] = time.time()
+    for k in ("Note", "Information", "Error Message"):
+        if k in data:
+            raise RuntimeError(f"Alpha Vantage said: {data[k]}")
+    return data
 
 
 def fred(series, key, n=90):
@@ -359,14 +379,19 @@ def fred(series, key, n=90):
 
 
 def gold_history(key):
-    q = urllib.parse.urlencode({"function": "GOLD_SILVER_HISTORY", "symbol": "XAU", "interval": "daily", "apikey": key})
-    out = []
-    for r in _get("https://www.alphavantage.co/query?" + q)["data"]:
-        try:
-            out.append((r["date"], float(r.get("price") or r.get("value") or r.get("close"))))
-        except (TypeError, ValueError, KeyError):
-            pass
-    return sorted(out, reverse=True)
+    try:
+        rows = av_get({"function": "GOLD_SILVER_HISTORY", "symbol": "XAU", "interval": "daily"}, key)["data"]
+        out = []
+        for r in rows:
+            try:
+                out.append((r["date"], float(r.get("price") or r.get("value") or r.get("close"))))
+            except (TypeError, ValueError, KeyError):
+                pass
+        if out:
+            return sorted(out, reverse=True)
+    except Exception as e:
+        print("Gold history endpoint failed, trying XAU/USD FX instead:", e)
+    return sorted(fx_daily("XAU", "USD", key).items(), reverse=True)
 
 
 def cot_live(dataset, code, long_f, short_f, ol_f, os_f, group, other_label, market, mode):
@@ -391,9 +416,7 @@ def cot_live(dataset, code, long_f, short_f, ol_f, os_f, group, other_label, mar
 
 
 def fx_daily(base, quote, ak):
-    q = urllib.parse.urlencode({"function": "FX_DAILY", "from_symbol": base, "to_symbol": quote,
-                                "outputsize": "compact", "apikey": ak})
-    ts = _get("https://www.alphavantage.co/query?" + q)["Time Series FX (Daily)"]
+    ts = av_get({"function": "FX_DAILY", "from_symbol": base, "to_symbol": quote, "outputsize": "compact"}, ak)["Time Series FX (Daily)"]
     return {d: float(v["4. close"]) for d, v in ts.items()}
 
 
@@ -414,13 +437,17 @@ def net_liquidity(fk):
 
 
 def from_live(manual):
-    fk, ak = os.environ["FRED_API_KEY"], os.environ["AV_API_KEY"]
+    fk, ak = os.environ["FRED_API_KEY"].strip(), os.environ["AV_API_KEY"].strip()
+    print("Fetching FRED series...")
     k = 10  # about two trading weeks
     ry, be, d2 = fred("DFII10", fk), fred("T10YIE", fk), fred("DGS2", fk)
     up, lo = fred("DFEDTARU", fk), fred("DFEDTARL", fk)
     vix, hy, oil, comp = fred("VIXCLS", fk), fred("BAMLH0A0HYM2", fk), fred("DCOILWTICO", fk), fred("NASDAQCOM", fk, 130)
+    print("Fetching gold from Alpha Vantage (paced to stay under 5 calls a minute)...")
     gold = gold_history(ak)[:90]
+    print("Fetching the six currency pairs for the dollar index (about 1 minute)...")
     dxy = dxy_series(ak)
+    print("Fetching liquidity and CFTC positioning...")
     mode = manual.get("cot_mode", "contrarian")
     ok = {"source": "FRED", "status": "auto"}
     return {
