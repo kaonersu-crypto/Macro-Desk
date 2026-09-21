@@ -1,0 +1,26 @@
+[
+ {
+  "date": "2026-09-18",
+  "asset": "dxy",
+  "bias": 68,
+  "net": 0.354,
+  "price": 100.27,
+  "cot_index": null
+ },
+ {
+  "date": "2026-09-18",
+  "asset": "gold",
+  "bias": 25,
+  "net": -0.496,
+  "price": 4378,
+  "cot_index": 55
+ },
+ {
+  "date": "2026-09-18",
+  "asset": "nasdaq",
+  "bias": 35,
+  "net": -0.293,
+  "price": 26522.55,
+  "cot_index": 82
+ }
+]
