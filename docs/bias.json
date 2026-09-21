@@ -1,6 +1,6 @@
 {
   "as_of": "2026-09-20",
-  "generated": "2026-09-21T11:18Z",
+  "generated": "2026-09-21T13:41Z",
   "assets": {
     "gold": {
       "title": "Gold",
@@ -136,11 +136,11 @@
       },
       "bias": {
         "score": 34,
-        "net": -0.322,
+        "net": -0.314,
         "label": "bearish",
         "conviction": "moderate",
         "bearish_pts": 41.5,
-        "bullish_pts": 9.3
+        "bullish_pts": 10.1
       },
       "headline": "Nasdaq reads bearish: real yields and the Fed path outweigh AI earnings momentum.",
       "drivers": [
@@ -173,9 +173,9 @@
           "name": "Risk appetite",
           "short": "risk appetite",
           "weight": 14,
-          "score": 0.16,
-          "points": 2.2,
-          "reading": "VIX 15.4 (+1.1), high-yield spread 2.70% (+5bp).",
+          "score": 0.218,
+          "points": 3.0,
+          "reading": "VIX 14.8 (+0.3), high-yield spread 2.70% (+5bp).",
           "why": "Low volatility and tight credit spreads mean investors are comfortable owning risk.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -286,10 +286,10 @@
       },
       "bias": {
         "score": 70,
-        "net": 0.397,
+        "net": 0.394,
         "label": "bullish",
         "conviction": "moderate",
-        "bearish_pts": 3.8,
+        "bearish_pts": 4.1,
         "bullish_pts": 43.4
       },
       "headline": "Dollar (DXY) reads bullish: the policy path and the oil shock outweigh fiscal worries.",
@@ -335,9 +335,9 @@
           "name": "Safe-haven demand",
           "short": "safe-haven demand",
           "weight": 10,
-          "score": -0.08,
-          "points": -0.8,
-          "reading": "VIX 15.4 (+1.1), high-yield spread 2.70% (+5bp). Calm markets mean less safe-haven demand for the dollar.",
+          "score": -0.109,
+          "points": -1.1,
+          "reading": "VIX 14.8 (+0.3), high-yield spread 2.70% (+5bp). Calm markets mean less safe-haven demand for the dollar.",
           "why": "The dollar tends to catch a bid when volatility and credit spreads jump. Calm markets take that support away.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
