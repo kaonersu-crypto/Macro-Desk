@@ -1,6 +1,6 @@
 {
   "as_of": "2026-09-20",
-  "generated": "2026-09-21T22:40Z",
+  "generated": "2026-09-21T23:03Z",
   "assets": {
     "gold": {
       "title": "Gold",
@@ -858,6 +858,97 @@
         "other_net": -89211,
         "mode": "contrarian"
       },
+      "earnings": null,
+      "drawdown_pct": 0.0
+    },
+    "usoil": {
+      "title": "USOIL",
+      "note": "",
+      "conflict": {
+        "state": "unclear",
+        "macro": "leans bearish",
+        "trend": "bullish",
+        "text": "Price trend is flat or the macro reading is weak, so the two neither confirm nor contradict each other.",
+        "macro_net": -0.142,
+        "trend_score": 1.0
+      },
+      "price": {
+        "value": "$107.02",
+        "note": "0.0% below its 90-day high"
+      },
+      "bias": {
+        "score": 54,
+        "net": 0.071,
+        "label": "neutral",
+        "conviction": "weak",
+        "bearish_pts": 9.9,
+        "bullish_pts": 16.0
+      },
+      "headline": "USOIL reads neutral: the drivers roughly cancel out.",
+      "drivers": [
+        {
+          "key": "supply",
+          "name": "Supply and shipping risk",
+          "short": "supply risk",
+          "weight": 28,
+          "score": 0.0,
+          "points": 0.0,
+          "reading": "Not set. Edit oil_supply in manual.json.",
+          "why": "Conflict, pipeline outages and Strait of Hormuz shipping flows can pull barrels off the market fast. This score is entered by hand.",
+          "source": "manual.json",
+          "status": "manual"
+        },
+        {
+          "key": "dollar_link",
+          "name": "Dollar link",
+          "short": "the dollar",
+          "weight": 16,
+          "score": -0.544,
+          "points": -8.7,
+          "reading": "DXY (rebuilt) +1.1% in two weeks. Oil is priced in dollars, so a stronger dollar tends to weigh on it.",
+          "why": "Oil is priced in dollars, so a stronger dollar makes it dearer for buyers using other currencies.",
+          "source": "Alpha Vantage FX_DAILY (via the dollar index)",
+          "status": "auto"
+        },
+        {
+          "key": "inventories",
+          "name": "US inventories",
+          "short": "inventories",
+          "weight": 14,
+          "score": 0.0,
+          "points": 0.0,
+          "reading": "No inventory reading entered this week.",
+          "why": "A bigger-than-normal draw on US crude stocks signals firmer demand or tighter supply. A build signals the opposite. Entered by hand each week from the EIA report.",
+          "source": "EIA weekly petroleum report, entered by hand in manual.json",
+          "status": "manual"
+        },
+        {
+          "key": "risk",
+          "name": "Risk mood",
+          "short": "risk mood",
+          "weight": 12,
+          "score": -0.101,
+          "points": -1.2,
+          "reading": "VIX 14.8 (+0.3), high-yield spread 2.68% (+0bp). Calmer markets usually go with steadier growth expectations and firmer oil demand.",
+          "why": "Calmer markets usually go with steadier growth expectations and firmer oil demand.",
+          "source": "FRED VIXCLS, BAMLH0A0HYM2",
+          "status": "auto"
+        },
+        {
+          "key": "price",
+          "name": "Price trend",
+          "short": "price trend",
+          "weight": 16,
+          "score": 1.0,
+          "points": 16.0,
+          "reading": "WTI $107.02 a barrel, 0.0% below its 90-day high, +23.0% in two weeks.",
+          "why": "Trend confirmation against the recent range.",
+          "source": "FRED DCOILWTICO",
+          "status": "auto"
+        }
+      ],
+      "flags": [],
+      "cot": null,
       "earnings": null,
       "drawdown_pct": 0.0
     }

@@ -88,5 +88,16 @@
   "macro_net": 0.622,
   "trend": 0.32,
   "conflict": "aligned"
+ },
+ {
+  "date": "2026-09-20",
+  "asset": "usoil",
+  "bias": 54,
+  "net": 0.071,
+  "price": 107.02,
+  "cot_index": null,
+  "macro_net": -0.142,
+  "trend": 1.0,
+  "conflict": "unclear"
  }
 ]
