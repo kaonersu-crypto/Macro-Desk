@@ -1,9 +1,17 @@
 {
   "as_of": "2026-09-20",
-  "generated": "2026-09-21T13:41Z",
+  "generated": "2026-09-21T13:51Z",
   "assets": {
     "gold": {
       "title": "Gold",
+      "conflict": {
+        "state": "aligned",
+        "macro": "bearish",
+        "trend": "bearish",
+        "text": "Macro and price trend agree: both are bearish.",
+        "macro_net": -0.462,
+        "trend_score": -0.435
+      },
       "price": {
         "value": "$4,378",
         "note": "6.5% below the 90-day high"
@@ -130,6 +138,14 @@
     },
     "nasdaq": {
       "title": "Nasdaq",
+      "conflict": {
+        "state": "conflicted",
+        "macro": "bearish",
+        "trend": "bullish",
+        "text": "Conflicted: the macro drivers read bearish, but the price trend is bullish. When the two disagree, treat the bias with extra caution.",
+        "macro_net": -0.371,
+        "trend_score": 0.578
+      },
       "price": {
         "value": "26,523",
         "note": "2.1% below the recent high"
@@ -280,6 +296,14 @@
     },
     "dxy": {
       "title": "Dollar (DXY)",
+      "conflict": {
+        "state": "aligned",
+        "macro": "bullish",
+        "trend": "bullish",
+        "text": "Macro and price trend agree: both are bullish.",
+        "macro_net": 0.37,
+        "trend_score": 0.773
+      },
       "price": {
         "value": "100.23",
         "note": "0.1% below the seven-week high"

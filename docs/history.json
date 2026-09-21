@@ -29,7 +29,10 @@
   "bias": 70,
   "net": 0.394,
   "price": 100.22852128121464,
-  "cot_index": 39
+  "cot_index": 39,
+  "macro_net": 0.37,
+  "trend": 0.773,
+  "conflict": "aligned"
  },
  {
   "date": "2026-09-20",
@@ -37,7 +40,10 @@
   "bias": 27,
   "net": -0.46,
   "price": 4378.3795617242,
-  "cot_index": 65
+  "cot_index": 65,
+  "macro_net": -0.462,
+  "trend": -0.435,
+  "conflict": "aligned"
  },
  {
   "date": "2026-09-20",
@@ -45,6 +51,9 @@
   "bias": 34,
   "net": -0.314,
   "price": 26522.55,
-  "cot_index": 78
+  "cot_index": 78,
+  "macro_net": -0.371,
+  "trend": 0.578,
+  "conflict": "conflicted"
  }
 ]
