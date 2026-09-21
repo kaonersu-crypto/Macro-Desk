@@ -1,0 +1,254 @@
+{
+  "as_of": "2026-09-18",
+  "gold": {
+    "price": 4378,
+    "ref_high": 4700,
+    "ref_high_label": "August peak of about $4,700"
+  },
+  "real_yield": {
+    "level": 2.66,
+    "chg_2w_bp": 23
+  },
+  "fed": {
+    "upper": 4.0,
+    "lower": 3.75,
+    "last_move_bp": 25,
+    "more_hikes_signalled": true,
+    "two_year": 4.67,
+    "two_year_chg_2w_bp": 30
+  },
+  "dollar": {
+    "label": "DXY",
+    "index": 100.29,
+    "chg_2w_pct": 1.3
+  },
+  "breakeven": {
+    "level": 2.38,
+    "chg_2w_bp": -2
+  },
+  "geopolitics": {
+    "score": 0.4,
+    "note": "US-Iran war and energy shock still in play, with oil easing back toward $100 a barrel and heavy government borrowing.",
+    "nasdaq_note": "The Iran war and Hormuz shipping attacks keep energy inflation risk alive.",
+    "dxy_note": "The US is a net energy exporter, so expensive oil helps the dollar against importers like Europe and Japan. Oil has eased this week."
+  },
+  "watch": [
+    {
+      "date": "Mon 21 Sep",
+      "label": "Nasdaq-100 rebalance takes effect and SpaceX's weight rises"
+    },
+    {
+      "date": "Wed 23 Sep",
+      "label": "S&P flash PMIs for September"
+    },
+    {
+      "date": "Thu 24 Sep",
+      "label": "US jobless claims, Fed balance sheet and the Trump-Xi meeting"
+    },
+    {
+      "date": "Fri 25 Sep",
+      "label": "University of Michigan inflation expectations and the CFTC COT report"
+    }
+  ],
+  "sources": {
+    "gold": {
+      "real_yield": {
+        "source": "Treasury TIPS curve via StreetStats, 18 Sep; two-week change from Tipswatch and ECM Source",
+        "status": "web"
+      },
+      "fed_path": {
+        "source": "Fed statement and dot plot coverage; 2-year yield from Alpha Vantage, 17 Sep",
+        "status": "web"
+      },
+      "dollar": {
+        "source": "DXY 100.29 from FXStreet. Weekly gain of about 1.3% from Trading Economics. The two-week change was not found, so the one-week move is used",
+        "status": "approximate"
+      },
+      "breakevens": {
+        "source": "FRED T10YIE via ECM Source and Tipswatch",
+        "status": "web"
+      },
+      "geopolitics": {
+        "source": "Entered by hand from news coverage",
+        "status": "manual"
+      },
+      "price": {
+        "source": "Investing.com and Trading Economics, 18 Sep",
+        "status": "web"
+      },
+      "cot": {
+        "source": "CFTC Disaggregated report via cotdata.net, positions as of 8 Sep. The 15 Sep report is out but I could not read its figures cleanly",
+        "status": "web"
+      }
+    },
+    "nasdaq": {
+      "real_yield": {
+        "source": "Treasury TIPS curve via StreetStats, 18 Sep; two-week change from Tipswatch and ECM Source",
+        "status": "web"
+      },
+      "fed_path": {
+        "source": "Fed statement coverage; 2-year yield from Alpha Vantage, 17 Sep",
+        "status": "web"
+      },
+      "risk": {
+        "source": "VIX from StreetStats, 18 Sep; high-yield spread from FRED via govspending.org, 15 Sep. Two-week changes are approximate",
+        "status": "approximate"
+      },
+      "liquidity": {
+        "source": "Fed H.4.1 via StreetStats and Market Ontology, 16 Sep",
+        "status": "web"
+      },
+      "geopolitics": {
+        "source": "WTI settle from CNBC, 18 Sep. Two-week change not found, set to zero",
+        "status": "approximate"
+      },
+      "earnings_ai": {
+        "source": "Entered by hand from market coverage",
+        "status": "manual"
+      },
+      "breadth": {
+        "source": "Entered by hand from Investrade and TheStreet coverage",
+        "status": "manual"
+      },
+      "price": {
+        "source": "Nasdaq Composite close 18 Sep; record from Wikipedia milestones page",
+        "status": "web"
+      },
+      "cot": {
+        "source": "CFTC TFF report via thetrading.tools, positions as of 1 Sep. Two reports behind, and the two-week change is approximate",
+        "status": "approximate"
+      }
+    },
+    "dxy": {
+      "rate_gap": {
+        "source": "Fed, ECB (2.50%, 10 Sep), BoJ (1.25%, 18 Sep) and BoE (3.75%, held) decisions via FXStreet",
+        "status": "web"
+      },
+      "policy_path": {
+        "source": "2-year yield from Alpha Vantage; rate-hike pricing from FXStreet and CME FedWatch coverage. The edge is entered by hand",
+        "status": "manual"
+      },
+      "real_yield": {
+        "source": "Treasury TIPS curve via StreetStats, 18 Sep",
+        "status": "web"
+      },
+      "risk": {
+        "source": "VIX from StreetStats, 18 Sep; high-yield spread from FRED via govspending.org, 15 Sep",
+        "status": "approximate"
+      },
+      "geopolitics": {
+        "source": "WTI settle from CNBC, 18 Sep. Two-week change not found, set to zero",
+        "status": "approximate"
+      },
+      "fiscal": {
+        "source": "Entered by hand from FXStreet and market coverage",
+        "status": "manual"
+      },
+      "growth": {
+        "source": "Entered by hand from FXStreet and Zacks coverage",
+        "status": "manual"
+      },
+      "price": {
+        "source": "FXStreet, 18 Sep. Weekly change from Trading Economics",
+        "status": "web"
+      }
+    }
+  },
+  "cot": {
+    "group": "Managed money",
+    "market": "COMEX gold futures",
+    "as_of": "2026-09-08",
+    "net": 134972,
+    "index": 55,
+    "changes": [
+      {
+        "label": "four weeks",
+        "value": -2690
+      },
+      {
+        "label": "thirteen weeks",
+        "value": 42158
+      }
+    ],
+    "other_label": "Producers and merchants",
+    "other_net": -30961,
+    "mode": "contrarian"
+  },
+  "nasdaq": {
+    "price": 26522.55,
+    "ref_high": 27093.9,
+    "ref_high_label": "record close of 27,094 on 2 June"
+  },
+  "risk": {
+    "vix": 14.81,
+    "vix_chg_2w": -3.0,
+    "hy": 2.76,
+    "hy_chg_2w_bp": 5
+  },
+  "liquidity": {
+    "net_bn": 5864,
+    "pct": 21,
+    "chg_4w_bn": 69
+  },
+  "oil": {
+    "price": 100.3,
+    "chg_2w_pct": 0.0
+  },
+  "earnings_ai": {
+    "score": 0.3,
+    "note": "The AI trade is intact: chipmakers bounced back from a mid-week scare and the Nasdaq led the week. Hyperscalers are funding heavy spending with debt."
+  },
+  "breadth": {
+    "score": -0.3,
+    "note": "Leadership is narrow. The Nasdaq rose on the week while the Dow fell for a third week and small caps, industrials and consumer discretionary slid for five or more."
+  },
+  "cot_nq": {
+    "group": "Leveraged funds",
+    "market": "E-mini Nasdaq-100 futures",
+    "as_of": "2026-09-01",
+    "net": -14092,
+    "index": 82,
+    "changes": [
+      {
+        "label": "two weeks",
+        "value": 48000
+      }
+    ],
+    "other_label": "",
+    "other_net": null,
+    "mode": "contrarian"
+  },
+  "dxy": {
+    "price": 100.27,
+    "ref_high": 100.5,
+    "ref_high_label": "seven-week high of 100.50 (18 Sep)",
+    "chg_pct": 1.3,
+    "chg_label": "week"
+  },
+  "policy_rates": {
+    "ecb": {
+      "rate": 2.5,
+      "chg_4w": 0.25
+    },
+    "boj": {
+      "rate": 1.25,
+      "chg_4w": 0.25
+    },
+    "boe": {
+      "rate": 3.75,
+      "chg_4w": 0.0
+    }
+  },
+  "policy_path": {
+    "edge": 0.5,
+    "note": "Futures give the Fed better than even odds of another hike on 28 October. The ECB is not expected to move before December, and the BoJ's split vote points to gradual tightening."
+  },
+  "fiscal": {
+    "score": -0.3,
+    "note": "The 10-year yield touched 5%, its highest since 2007, on fiscal worries. President Trump is again demanding much lower rates, which raises doubts about Fed independence."
+  },
+  "growth": {
+    "score": 0.3,
+    "note": "The Fed calls the US economy strong and this week's jobs data was firm."
+  }
+}

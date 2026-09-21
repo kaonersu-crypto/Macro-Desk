@@ -1,0 +1,62 @@
+{
+  "more_hikes_signalled": true,
+  "geopolitics": {
+    "score": 0.4,
+    "note": "US-Iran war and energy shock still in play, with oil easing back toward $100 a barrel and heavy government borrowing.",
+    "nasdaq_note": "The Iran war and Hormuz shipping attacks keep energy inflation risk alive.",
+    "dxy_note": "The US is a net energy exporter, so expensive oil helps the dollar against importers like Europe and Japan. Oil has eased this week."
+  },
+  "watch": [
+    {
+      "date": "Mon 21 Sep",
+      "label": "Nasdaq-100 rebalance takes effect and SpaceX's weight rises"
+    },
+    {
+      "date": "Wed 23 Sep",
+      "label": "S&P flash PMIs for September"
+    },
+    {
+      "date": "Thu 24 Sep",
+      "label": "US jobless claims, Fed balance sheet and the Trump-Xi meeting"
+    },
+    {
+      "date": "Fri 25 Sep",
+      "label": "University of Michigan inflation expectations and the CFTC COT report"
+    }
+  ],
+  "cot_mode": "contrarian",
+  "earnings_ai": {
+    "score": 0.3,
+    "note": "The AI trade is intact: chipmakers bounced back from a mid-week scare and the Nasdaq led the week. Hyperscalers are funding heavy spending with debt."
+  },
+  "breadth": {
+    "score": -0.3,
+    "note": "Leadership is narrow. The Nasdaq rose on the week while the Dow fell for a third week and small caps, industrials and consumer discretionary slid for five or more."
+  },
+  "policy_rates": {
+    "ecb": {
+      "rate": 2.5,
+      "chg_4w": 0.25
+    },
+    "boj": {
+      "rate": 1.25,
+      "chg_4w": 0.25
+    },
+    "boe": {
+      "rate": 3.75,
+      "chg_4w": 0.0
+    }
+  },
+  "policy_path": {
+    "edge": 0.5,
+    "note": "Futures give the Fed better than even odds of another hike on 28 October. The ECB is not expected to move before December, and the BoJ's split vote points to gradual tightening."
+  },
+  "fiscal": {
+    "score": -0.3,
+    "note": "The 10-year yield touched 5%, its highest since 2007, on fiscal worries. President Trump is again demanding much lower rates, which raises doubts about Fed independence."
+  },
+  "growth": {
+    "score": 0.3,
+    "note": "The Fed calls the US economy strong and this week's jobs data was firm."
+  }
+}
