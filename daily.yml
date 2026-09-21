@@ -1,0 +1,26 @@
+name: Daily macro bias
+on:
+  schedule:
+    - cron: "30 22 * * 1-5"   # 22:30 UTC on weekdays, after the US close
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python engine.py --out docs
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          AV_API_KEY: ${{ secrets.AV_API_KEY }}
+      - name: Commit results
+        run: |
+          git config user.name "gold-desk-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/bias.json docs/history.json
+          git diff --staged --quiet || git commit -m "Daily bias $(date -u +%F)"
+          git push
