@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-09-18",
-  "generated": "2026-09-20T22:42Z",
+  "as_of": "2026-09-20",
+  "generated": "2026-09-21T11:18Z",
   "assets": {
     "gold": {
       "title": "Gold",
       "price": {
         "value": "$4,378",
-        "note": "6.9% below the August peak of about $4,700"
+        "note": "6.5% below the 90-day high"
       },
       "bias": {
-        "score": 25,
-        "net": -0.496,
+        "score": 27,
+        "net": -0.46,
         "label": "bearish",
         "conviction": "moderate",
-        "bearish_pts": 54.9,
+        "bearish_pts": 51.2,
         "bullish_pts": 5.2
       },
       "headline": "Gold reads bearish: real yields and the Fed path outweigh war and fiscal risk.",
@@ -23,36 +23,36 @@
           "name": "Real yields",
           "short": "real yields",
           "weight": 27,
-          "score": -0.875,
-          "points": -23.6,
-          "reading": "10-year TIPS yield 2.66%, +23bp in two weeks.",
+          "score": -0.722,
+          "points": -19.5,
+          "reading": "10-year TIPS yield 2.61%, +16bp in two weeks.",
           "why": "Gold pays no interest, so higher inflation-adjusted yields raise the cost of holding it.",
-          "source": "Treasury TIPS curve via StreetStats, 18 Sep; two-week change from Tipswatch and ECM Source",
-          "status": "web"
+          "source": "FRED DFII10",
+          "status": "auto"
         },
         {
           "key": "fed_path",
           "name": "Fed path",
           "short": "the Fed path",
           "weight": 18,
-          "score": -0.875,
-          "points": -15.8,
-          "reading": "Fed funds 3.75–4.00%, last move +25bp. 2-year yield 4.67%, +30bp in two weeks.",
+          "score": -0.85,
+          "points": -15.3,
+          "reading": "Fed funds 3.75–4.00%, last move +25bp. 2-year yield 4.67%, +28bp in two weeks.",
           "why": "A tightening Fed and rising 2-year yields pull money toward cash and bonds.",
-          "source": "Fed statement and dot plot coverage; 2-year yield from Alpha Vantage, 17 Sep",
-          "status": "web"
+          "source": "FRED DFEDTARU, DGS2; guidance from manual.json",
+          "status": "auto"
         },
         {
           "key": "dollar",
           "name": "US dollar",
           "short": "the dollar",
           "weight": 13,
-          "score": -0.65,
-          "points": -8.5,
-          "reading": "DXY 100.29, +1.3% in two weeks.",
+          "score": -0.544,
+          "points": -7.1,
+          "reading": "DXY (rebuilt) 100.23, +1.1% in two weeks.",
           "why": "Gold is priced in dollars. A stronger dollar makes it dearer for buyers in other currencies.",
-          "source": "DXY 100.29 from FXStreet. Weekly gain of about 1.3% from Trading Economics. The two-week change was not found, so the one-week move is used",
-          "status": "approximate"
+          "source": "Alpha Vantage FX_DAILY, index rebuilt from six pairs",
+          "status": "auto"
         },
         {
           "key": "breakevens",
@@ -61,10 +61,10 @@
           "weight": 9,
           "score": -0.133,
           "points": -1.2,
-          "reading": "10-year breakeven 2.38%, −2bp in two weeks.",
+          "reading": "10-year breakeven 2.33%, −2bp in two weeks.",
           "why": "Rising breakevens support gold as an inflation hedge. Steady ones mean yields are rising in real terms, not on inflation fears.",
-          "source": "FRED T10YIE via ECM Source and Tipswatch",
-          "status": "web"
+          "source": "FRED T10YIE",
+          "status": "auto"
         },
         {
           "key": "geopolitics",
@@ -75,7 +75,7 @@
           "points": 5.2,
           "reading": "US-Iran war and energy shock still in play, with oil easing back toward $100 a barrel and heavy government borrowing.",
           "why": "Conflict and government borrowing worries drive demand for gold as a store of value. This score is entered by hand.",
-          "source": "Entered by hand from news coverage",
+          "source": "manual.json",
           "status": "manual"
         },
         {
@@ -83,126 +83,126 @@
           "name": "Price vs recent high",
           "short": "price action",
           "weight": 10,
-          "score": -0.457,
-          "points": -4.6,
-          "reading": "Gold $4,378, 6.9% below its August peak of about $4,700.",
+          "score": -0.435,
+          "points": -4.3,
+          "reading": "Gold $4,378, 6.5% below its 90-day high.",
           "why": "Checks whether the market is agreeing with the fundamentals.",
-          "source": "Investing.com and Trading Economics, 18 Sep",
-          "status": "web"
+          "source": "Alpha Vantage GOLD_SILVER_HISTORY",
+          "status": "auto"
         },
         {
           "key": "cot",
           "name": "Fund positioning",
           "short": "fund positioning",
           "weight": 10,
-          "score": -0.125,
-          "points": -1.2,
-          "reading": "Managed money net long 134,972 contracts, COT index 55 of 100 (positions as of 2026-09-08), −2,690 over four weeks.",
+          "score": -0.375,
+          "points": -3.8,
+          "reading": "Managed money net long 133,116 contracts, COT index 65 of 100 (positions as of 2026-09-15), −8,532 over four weeks.",
           "why": "Hedge funds already heavily long leave few buyers left, so crowded longs raise downside risk. Crowded shorts raise squeeze risk. Set to contrarian in manual.json.",
-          "source": "CFTC Disaggregated report via cotdata.net, positions as of 8 Sep. The 15 Sep report is out but I could not read its figures cleanly",
-          "status": "web"
+          "source": "CFTC Disaggregated Futures Only, gold 088691",
+          "status": "auto"
         }
       ],
       "flags": [
-        "Real yields are at 2.66%, yet gold is only 6.9% below its recent high. Something besides rates is holding the price up. The war and fiscal risk driver is the likely candidate, and it is scored by hand."
+        "Real yields are at 2.61%, yet gold is only 6.5% below its recent high. Something besides rates is holding the price up. The war and fiscal risk driver is the likely candidate, and it is scored by hand."
       ],
       "cot": {
         "group": "Managed money",
         "market": "COMEX gold futures",
-        "as_of": "2026-09-08",
-        "net": 134972,
-        "index": 55,
+        "as_of": "2026-09-15",
+        "net": 133116,
+        "index": 65,
         "changes": [
           {
             "label": "four weeks",
-            "value": -2690
+            "value": -8532
           },
           {
             "label": "thirteen weeks",
-            "value": 42158
+            "value": 19395
           }
         ],
         "other_label": "Producers and merchants",
-        "other_net": -30961,
+        "other_net": -28061,
         "mode": "contrarian"
       },
-      "drawdown_pct": -6.9
+      "drawdown_pct": -6.5
     },
     "nasdaq": {
       "title": "Nasdaq",
       "price": {
         "value": "26,523",
-        "note": "2.1% below the record close of 27,094 on 2 June"
+        "note": "2.1% below the recent high"
       },
       "bias": {
-        "score": 35,
-        "net": -0.293,
+        "score": 34,
+        "net": -0.322,
         "label": "bearish",
         "conviction": "moderate",
-        "bearish_pts": 41.6,
-        "bullish_pts": 12.3
+        "bearish_pts": 41.5,
+        "bullish_pts": 9.3
       },
-      "headline": "Nasdaq reads bearish: real yields and the Fed path outweigh risk appetite.",
+      "headline": "Nasdaq reads bearish: real yields and the Fed path outweigh AI earnings momentum.",
       "drivers": [
         {
           "key": "real_yield",
           "name": "Real yields",
           "short": "real yields",
           "weight": 22,
-          "score": -0.875,
-          "points": -19.2,
-          "reading": "10-year TIPS yield 2.66%, +23bp in two weeks.",
+          "score": -0.722,
+          "points": -15.9,
+          "reading": "10-year TIPS yield 2.61%, +16bp in two weeks.",
           "why": "Growth stocks are valued on distant earnings. Higher real yields discount those earnings harder.",
-          "source": "Treasury TIPS curve via StreetStats, 18 Sep; two-week change from Tipswatch and ECM Source",
-          "status": "web"
+          "source": "FRED DFII10",
+          "status": "auto"
         },
         {
           "key": "fed_path",
           "name": "Fed path",
           "short": "the Fed path",
           "weight": 14,
-          "score": -0.875,
-          "points": -12.2,
-          "reading": "Fed funds 3.75–4.00%, last move +25bp. 2-year yield 4.67%, +30bp in two weeks.",
+          "score": -0.85,
+          "points": -11.9,
+          "reading": "Fed funds 3.75–4.00%, last move +25bp. 2-year yield 4.67%, +28bp in two weeks.",
           "why": "Tighter policy raises borrowing costs and competes with stocks for money.",
-          "source": "Fed statement coverage; 2-year yield from Alpha Vantage, 17 Sep",
-          "status": "web"
+          "source": "FRED DFEDTARU, DGS2; guidance from manual.json",
+          "status": "auto"
         },
         {
           "key": "risk",
           "name": "Risk appetite",
           "short": "risk appetite",
           "weight": 14,
-          "score": 0.372,
-          "points": 5.2,
-          "reading": "VIX 14.8 (−3.0), high-yield spread 2.76% (+5bp).",
+          "score": 0.16,
+          "points": 2.2,
+          "reading": "VIX 15.4 (+1.1), high-yield spread 2.70% (+5bp).",
           "why": "Low volatility and tight credit spreads mean investors are comfortable owning risk.",
-          "source": "VIX from StreetStats, 18 Sep; high-yield spread from FRED via govspending.org, 15 Sep. Two-week changes are approximate",
-          "status": "approximate"
+          "source": "FRED VIXCLS, BAMLH0A0HYM2",
+          "status": "auto"
         },
         {
           "key": "liquidity",
           "name": "Net liquidity",
           "short": "liquidity",
           "weight": 9,
-          "score": -0.018,
-          "points": -0.2,
-          "reading": "Net liquidity $5,864B, 21st percentile of five years, +69B over four weeks.",
+          "score": -0.008,
+          "points": -0.1,
+          "reading": "Net liquidity $5,864B, 20th percentile of five years, +72B over four weeks.",
           "why": "Fed assets minus the Treasury cash account and reverse repos. More liquidity has tended to lift risk assets.",
-          "source": "Fed H.4.1 via StreetStats and Market Ontology, 16 Sep",
-          "status": "web"
+          "source": "FRED WALCL minus WTREGEN minus RRPONTSYD",
+          "status": "auto"
         },
         {
           "key": "geopolitics",
           "name": "Oil and war shock",
           "short": "the oil and war shock",
           "weight": 10,
-          "score": -0.355,
-          "points": -3.6,
-          "reading": "WTI $100 a barrel, +0.0% in two weeks. The Iran war and Hormuz shipping attacks keep energy inflation risk alive.",
+          "score": -0.773,
+          "points": -7.7,
+          "reading": "WTI $107 a barrel, +23.0% in two weeks. The Iran war and Hormuz shipping attacks keep energy inflation risk alive.",
           "why": "Expensive oil feeds inflation, which keeps the Fed hiking and hurts growth stocks. Gold reads the same war as support.",
-          "source": "WTI settle from CNBC, 18 Sep. Two-week change not found, set to zero",
-          "status": "approximate"
+          "source": "FRED DCOILWTICO; note from manual.json",
+          "status": "auto"
         },
         {
           "key": "earnings_ai",
@@ -213,7 +213,7 @@
           "points": 3.6,
           "reading": "The AI trade is intact: chipmakers bounced back from a mid-week scare and the Nasdaq led the week. Hyperscalers are funding heavy spending with debt.",
           "why": "The largest stocks are about half the index, so their earnings and AI spending set the tone. This score is entered by hand.",
-          "source": "Entered by hand from market coverage",
+          "source": "manual.json",
           "status": "manual"
         },
         {
@@ -225,7 +225,7 @@
           "points": -2.4,
           "reading": "Leadership is narrow. The Nasdaq rose on the week while the Dow fell for a third week and small caps, industrials and consumer discretionary slid for five or more.",
           "why": "Broad participation makes rallies sturdier. Narrow leadership makes them fragile. This score is entered by hand.",
-          "source": "Entered by hand from Investrade and TheStreet coverage",
+          "source": "manual.json",
           "status": "manual"
         },
         {
@@ -235,42 +235,45 @@
           "weight": 6,
           "score": 0.578,
           "points": 3.5,
-          "reading": "Nasdaq Composite 26,523, 2.1% below its record close of 27,094 on 2 June.",
+          "reading": "Nasdaq Composite 26,523, 2.1% below its recent high.",
           "why": "Trend confirmation. Trading within a few percent of the record counts as bullish.",
-          "source": "Nasdaq Composite close 18 Sep; record from Wikipedia milestones page",
-          "status": "web"
+          "source": "FRED NASDAQCOM",
+          "status": "auto"
         },
         {
           "key": "cot",
           "name": "Fund positioning",
           "short": "fund positioning",
           "weight": 5,
-          "score": -0.8,
-          "points": -4.0,
-          "reading": "Leveraged funds net short 14,092 contracts, COT index 82 of 100 (positions as of 2026-09-01), +48,000 over two weeks.",
+          "score": -0.7,
+          "points": -3.5,
+          "reading": "Leveraged funds net short 6,387 contracts, COT index 78 of 100 (positions as of 2026-09-15), +55,384 over four weeks.",
           "why": "Leveraged funds are often hedging, so this is a noisy signal. Contrarian mode treats a crowded long as a risk and a crowded short as squeeze fuel. Set in manual.json.",
-          "source": "CFTC TFF report via thetrading.tools, positions as of 1 Sep. Two reports behind, and the two-week change is approximate",
-          "status": "approximate"
+          "source": "CFTC Traders in Financial Futures, Nasdaq mini 209742",
+          "status": "auto"
         }
       ],
       "flags": [
-        "The macro drivers lean bearish, yet the Nasdaq is only 2.1% below its record. The market is looking through higher rates, most likely on AI earnings. That gap can close either way.",
-        "Fund positioning is stretched (COT index 82 of 100). Crowded positioning makes sharp reversals more likely."
+        "The macro drivers lean bearish, yet the Nasdaq is only 2.1% below its record. The market is looking through higher rates, most likely on AI earnings. That gap can close either way."
       ],
       "cot": {
         "group": "Leveraged funds",
         "market": "E-mini Nasdaq-100 futures",
-        "as_of": "2026-09-01",
-        "net": -14092,
-        "index": 82,
+        "as_of": "2026-09-15",
+        "net": -6387,
+        "index": 78,
         "changes": [
           {
-            "label": "two weeks",
-            "value": 48000
+            "label": "four weeks",
+            "value": 55384
+          },
+          {
+            "label": "thirteen weeks",
+            "value": 21767
           }
         ],
-        "other_label": "",
-        "other_net": null,
+        "other_label": "Asset managers",
+        "other_net": 66811,
         "mode": "contrarian"
       },
       "drawdown_pct": -2.1
@@ -278,18 +281,18 @@
     "dxy": {
       "title": "Dollar (DXY)",
       "price": {
-        "value": "100.27",
-        "note": "0.2% below the seven-week high of 100.50 (18 Sep)"
+        "value": "100.23",
+        "note": "0.1% below the seven-week high"
       },
       "bias": {
-        "score": 68,
-        "net": 0.354,
+        "score": 70,
+        "net": 0.397,
         "label": "bullish",
         "conviction": "moderate",
-        "bearish_pts": 4.9,
-        "bullish_pts": 38.1
+        "bearish_pts": 3.8,
+        "bullish_pts": 43.4
       },
-      "headline": "Dollar (DXY) reads bullish: the policy path and US real yields outweigh fiscal worries.",
+      "headline": "Dollar (DXY) reads bullish: the policy path and the oil shock outweigh fiscal worries.",
       "drivers": [
         {
           "key": "rate_gap",
@@ -300,19 +303,19 @@
           "points": 5.9,
           "reading": "Fed funds mid 3.88% vs ECB 2.50%, BoJ 1.25%, BoE 3.75%. Weighted by index share, the US rate gap is 1.40 points, +0.04 points over four weeks.",
           "why": "The index is 57.6% euro and 13.6% yen. A wider gap between US rates and theirs pulls money into dollars.",
-          "source": "Fed, ECB (2.50%, 10 Sep), BoJ (1.25%, 18 Sep) and BoE (3.75%, held) decisions via FXStreet",
-          "status": "web"
+          "source": "FRED DFEDTARU; ECB, BoJ and BoE rates from manual.json",
+          "status": "manual"
         },
         {
           "key": "policy_path",
           "name": "Expected policy path",
           "short": "the policy path",
           "weight": 20,
-          "score": 0.625,
-          "points": 12.5,
-          "reading": "US 2-year yield +30bp in two weeks. Futures give the Fed better than even odds of another hike on 28 October. The ECB is not expected to move before December, and the BoJ's split vote points to gradual tightening.",
+          "score": 0.6,
+          "points": 12.0,
+          "reading": "US 2-year yield +28bp in two weeks. Futures give the Fed better than even odds of another hike on 28 October. The ECB is not expected to move before December, and the BoJ's split vote points to gradual tightening.",
           "why": "Markets trade where central banks are heading, not just where rates are. A Fed priced for more hikes than the ECB and BoJ supports the dollar. The edge is entered by hand.",
-          "source": "2-year yield from Alpha Vantage; rate-hike pricing from FXStreet and CME FedWatch coverage. The edge is entered by hand",
+          "source": "FRED DGS2; edge from manual.json",
           "status": "manual"
         },
         {
@@ -320,36 +323,36 @@
           "name": "US real yields",
           "short": "US real yields",
           "weight": 10,
-          "score": 0.875,
-          "points": 8.8,
-          "reading": "10-year TIPS yield 2.66%, +23bp in two weeks. Higher US real yields draw in foreign money.",
+          "score": 0.722,
+          "points": 7.2,
+          "reading": "10-year TIPS yield 2.61%, +16bp in two weeks. Higher US real yields draw in foreign money.",
           "why": "Higher inflation-adjusted returns on Treasuries draw in foreign money.",
-          "source": "Treasury TIPS curve via StreetStats, 18 Sep",
-          "status": "web"
+          "source": "FRED DFII10",
+          "status": "auto"
         },
         {
           "key": "risk",
           "name": "Safe-haven demand",
           "short": "safe-haven demand",
           "weight": 10,
-          "score": -0.186,
-          "points": -1.9,
-          "reading": "VIX 14.8 (−3.0), high-yield spread 2.76% (+5bp). Calm markets mean less safe-haven demand for the dollar.",
+          "score": -0.08,
+          "points": -0.8,
+          "reading": "VIX 15.4 (+1.1), high-yield spread 2.70% (+5bp). Calm markets mean less safe-haven demand for the dollar.",
           "why": "The dollar tends to catch a bid when volatility and credit spreads jump. Calm markets take that support away.",
-          "source": "VIX from StreetStats, 18 Sep; high-yield spread from FRED via govspending.org, 15 Sep",
-          "status": "approximate"
+          "source": "FRED VIXCLS, BAMLH0A0HYM2",
+          "status": "auto"
         },
         {
           "key": "geopolitics",
           "name": "Oil shock",
           "short": "the oil shock",
           "weight": 10,
-          "score": 0.379,
-          "points": 3.8,
-          "reading": "WTI $100 a barrel, +0.0% in two weeks. The US is a net energy exporter, so expensive oil helps the dollar against importers like Europe and Japan. Oil has eased this week.",
+          "score": 0.963,
+          "points": 9.6,
+          "reading": "WTI $107 a barrel, +23.0% in two weeks. The US is a net energy exporter, so expensive oil helps the dollar against importers like Europe and Japan. Oil has eased this week.",
           "why": "The US is a net energy exporter. Expensive oil hurts importers like Europe and Japan and helps the dollar against them.",
-          "source": "WTI settle from CNBC, 18 Sep. Two-week change not found, set to zero",
-          "status": "approximate"
+          "source": "FRED DCOILWTICO; note from manual.json",
+          "status": "auto"
         },
         {
           "key": "fiscal",
@@ -360,7 +363,7 @@
           "points": -3.0,
           "reading": "The 10-year yield touched 5%, its highest since 2007, on fiscal worries. President Trump is again demanding much lower rates, which raises doubts about Fed independence.",
           "why": "Heavy borrowing and pressure on the Fed can push yields up while the dollar falls. This score is entered by hand.",
-          "source": "Entered by hand from FXStreet and market coverage",
+          "source": "manual.json",
           "status": "manual"
         },
         {
@@ -372,7 +375,7 @@
           "points": 2.4,
           "reading": "The Fed calls the US economy strong and this week's jobs data was firm.",
           "why": "Stronger US data than abroad supports the dollar. This score is entered by hand.",
-          "source": "Entered by hand from FXStreet and Zacks coverage",
+          "source": "manual.json",
           "status": "manual"
         },
         {
@@ -380,19 +383,50 @@
           "name": "Price trend",
           "short": "price trend",
           "weight": 6,
-          "score": 0.787,
-          "points": 4.7,
-          "reading": "DXY 100.27, 0.2% below its seven-week high of 100.50 (18 Sep), +1.3% over the week.",
+          "score": 0.773,
+          "points": 4.6,
+          "reading": "DXY 100.23, 0.1% below its seven-week high, +1.1% over the week.",
           "why": "Trend confirmation. A rising index close to its recent high counts as bullish.",
-          "source": "FXStreet, 18 Sep. Weekly change from Trading Economics",
-          "status": "web"
+          "source": "Alpha Vantage FX_DAILY, index rebuilt from six pairs",
+          "status": "auto"
+        },
+        {
+          "key": "cot",
+          "name": "Fund positioning",
+          "short": "fund positioning",
+          "weight": 6,
+          "score": 0.275,
+          "points": 1.7,
+          "reading": "Leveraged funds net short 4,909 contracts, COT index 39 of 100 (positions as of 2026-09-15), −13,021 over four weeks.",
+          "why": "Dollar index futures are a thin market, so this is a noisy signal. Contrarian mode treats a crowded long as a risk. Set in manual.json.",
+          "source": "CFTC Traders in Financial Futures, ICE dollar index 098662",
+          "status": "auto"
         }
       ],
       "flags": [
         "Rates and central bank paths favour the dollar, but fiscal worries and pressure on the Fed pull the other way. A sell-America episode would show up as the dollar falling while US yields rise."
       ],
-      "cot": null,
-      "drawdown_pct": -0.2
+      "cot": {
+        "group": "Leveraged funds",
+        "market": "ICE US Dollar Index futures",
+        "as_of": "2026-09-15",
+        "net": -4909,
+        "index": 39,
+        "changes": [
+          {
+            "label": "four weeks",
+            "value": -13021
+          },
+          {
+            "label": "thirteen weeks",
+            "value": -3039
+          }
+        ],
+        "other_label": "Asset managers",
+        "other_net": 15802,
+        "mode": "contrarian"
+      },
+      "drawdown_pct": -0.1
     }
   },
   "compare": [
@@ -400,18 +434,18 @@
       "key": "real_yield",
       "name": "Real yields",
       "phrase": "real yields",
-      "gold": -0.875,
-      "nasdaq": -0.875,
-      "dxy": 0.875,
+      "gold": -0.722,
+      "nasdaq": -0.722,
+      "dxy": 0.722,
       "verdict": "agree"
     },
     {
       "key": "fed_path",
       "name": "Fed path",
       "phrase": "the Fed path",
-      "gold": -0.875,
-      "nasdaq": -0.875,
-      "dxy": 0.625,
+      "gold": -0.85,
+      "nasdaq": -0.85,
+      "dxy": 0.6,
       "verdict": "agree"
     },
     {
@@ -419,8 +453,8 @@
       "name": "War and oil",
       "phrase": "war and oil",
       "gold": 0.4,
-      "nasdaq": -0.355,
-      "dxy": 0.379,
+      "nasdaq": -0.773,
+      "dxy": 0.963,
       "verdict": "split"
     }
   ],

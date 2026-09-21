@@ -22,5 +22,29 @@
   "net": -0.293,
   "price": 26522.55,
   "cot_index": 82
+ },
+ {
+  "date": "2026-09-20",
+  "asset": "dxy",
+  "bias": 70,
+  "net": 0.397,
+  "price": 100.22852128121464,
+  "cot_index": 39
+ },
+ {
+  "date": "2026-09-20",
+  "asset": "gold",
+  "bias": 27,
+  "net": -0.46,
+  "price": 4378.3795617242,
+  "cot_index": 65
+ },
+ {
+  "date": "2026-09-20",
+  "asset": "nasdaq",
+  "bias": 34,
+  "net": -0.322,
+  "price": 26522.55,
+  "cot_index": 78
  }
 ]
