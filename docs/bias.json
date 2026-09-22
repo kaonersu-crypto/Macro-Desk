@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-09-20",
-  "generated": "2026-09-21T23:03Z",
+  "as_of": "2026-09-21",
+  "generated": "2026-09-22T10:33Z",
   "assets": {
     "gold": {
       "title": "Gold",
@@ -10,19 +10,19 @@
         "macro": "bearish",
         "trend": "bearish",
         "text": "Macro and price trend agree: both are bearish.",
-        "macro_net": -0.545,
-        "trend_score": -0.435
+        "macro_net": -0.577,
+        "trend_score": -0.454
       },
       "price": {
-        "value": "$4,378",
-        "note": "6.5% below the 90-day high"
+        "value": "$4,365",
+        "note": "6.8% below the 90-day high"
       },
       "bias": {
-        "score": 23,
-        "net": -0.534,
+        "score": 22,
+        "net": -0.564,
         "label": "bearish",
         "conviction": "strong",
-        "bearish_pts": 58.6,
+        "bearish_pts": 61.6,
         "bullish_pts": 5.2
       },
       "headline": "Gold reads bearish: real yields and the Fed path outweigh war and fiscal risk.",
@@ -56,9 +56,9 @@
           "name": "US dollar",
           "short": "the dollar",
           "weight": 13,
-          "score": -0.544,
-          "points": -7.1,
-          "reading": "DXY (rebuilt) 100.23, +1.1% in two weeks.",
+          "score": -0.761,
+          "points": -9.9,
+          "reading": "DXY (rebuilt) 100.43, +1.5% in two weeks.",
           "why": "Gold is priced in dollars. A stronger dollar makes it dearer for buyers in other currencies.",
           "source": "Alpha Vantage FX_DAILY, index rebuilt from six pairs",
           "status": "auto"
@@ -92,9 +92,9 @@
           "name": "Price vs recent high",
           "short": "price action",
           "weight": 10,
-          "score": -0.435,
-          "points": -4.3,
-          "reading": "Gold $4,378, 6.5% below its 90-day high.",
+          "score": -0.454,
+          "points": -4.5,
+          "reading": "Gold $4,365, 6.8% below its 90-day high.",
           "why": "Checks whether the market is agreeing with the fundamentals.",
           "source": "Alpha Vantage GOLD_SILVER_HISTORY",
           "status": "auto"
@@ -113,7 +113,7 @@
         }
       ],
       "flags": [
-        "Real yields are at 2.68%, yet gold is only 6.5% below its recent high. Something besides rates is holding the price up. The war and fiscal risk driver is the likely candidate, and it is scored by hand."
+        "Real yields are at 2.68%, yet gold is only 6.8% below its recent high. Something besides rates is holding the price up. The war and fiscal risk driver is the likely candidate, and it is scored by hand."
       ],
       "cot": {
         "group": "Managed money",
@@ -136,7 +136,7 @@
         "mode": "contrarian"
       },
       "earnings": null,
-      "drawdown_pct": -6.5
+      "drawdown_pct": -6.8
     },
     "nasdaq": {
       "title": "Nasdaq-100",
@@ -147,21 +147,21 @@
         "trend": "bullish",
         "text": "Conflicted: the macro drivers read bearish, but the price trend is bullish. When the two disagree, treat the bias with extra caution.",
         "macro_net": -0.434,
-        "trend_score": 0.337
+        "trend_score": 0.884
       },
       "price": {
-        "value": "29,644",
-        "note": "3.3% below the recent high"
+        "value": "30,482",
+        "note": "0.6% below the recent high"
       },
       "bias": {
-        "score": 31,
-        "net": -0.388,
+        "score": 32,
+        "net": -0.355,
         "label": "bearish",
         "conviction": "moderate",
         "bearish_pts": 47.9,
-        "bullish_pts": 9.1
+        "bullish_pts": 12.4
       },
-      "headline": "Nasdaq-100 reads bearish: real yields and the Fed path outweigh AI earnings momentum.",
+      "headline": "Nasdaq-100 reads bearish: real yields and the Fed path outweigh price action.",
       "drivers": [
         {
           "key": "real_yield",
@@ -252,9 +252,9 @@
           "name": "Price vs recent high",
           "short": "price action",
           "weight": 6,
-          "score": 0.337,
-          "points": 2.0,
-          "reading": "Nasdaq-100 29,644, 3.3% below its recent high.",
+          "score": 0.884,
+          "points": 5.3,
+          "reading": "Nasdaq-100 30,482, 0.6% below its recent high.",
           "why": "Trend confirmation. Trading within a few percent of the recent high counts as bullish.",
           "source": "FRED NASDAQ100",
           "status": "auto"
@@ -272,7 +272,9 @@
           "status": "auto"
         }
       ],
-      "flags": [],
+      "flags": [
+        "The macro drivers lean bearish, yet the Nasdaq-100 is only 0.6% below its recent high. The market is looking through higher rates, most likely on AI earnings. That gap can close either way."
+      ],
       "cot": {
         "group": "Leveraged funds",
         "market": "E-mini Nasdaq-100 futures",
@@ -294,7 +296,7 @@
         "mode": "contrarian"
       },
       "earnings": null,
-      "drawdown_pct": -3.3
+      "drawdown_pct": -0.6
     },
     "dxy": {
       "title": "Dollar (DXY)",
@@ -305,19 +307,19 @@
         "trend": "bullish",
         "text": "Macro and price trend agree: both are bullish.",
         "macro_net": 0.421,
-        "trend_score": 0.773
+        "trend_score": 0.737
       },
       "price": {
-        "value": "100.23",
-        "note": "0.1% below the seven-week high"
+        "value": "100.43",
+        "note": "0.0% below the seven-week high"
       },
       "bias": {
         "score": 72,
-        "net": 0.442,
+        "net": 0.44,
         "label": "bullish",
         "conviction": "moderate",
         "bearish_pts": 4.3,
-        "bullish_pts": 48.4
+        "bullish_pts": 48.2
       },
       "headline": "Dollar (DXY) reads bullish: the policy path and the oil shock outweigh fiscal worries.",
       "drivers": [
@@ -410,9 +412,9 @@
           "name": "Price trend",
           "short": "price trend",
           "weight": 6,
-          "score": 0.773,
-          "points": 4.6,
-          "reading": "DXY 100.23, 0.1% below its seven-week high, +1.1% over the week.",
+          "score": 0.737,
+          "points": 4.4,
+          "reading": "DXY 100.43, 0.0% below its seven-week high, +0.9% over the week.",
           "why": "Trend confirmation. A rising index close to its recent high counts as bullish.",
           "source": "Alpha Vantage FX_DAILY, index rebuilt from six pairs",
           "status": "auto"
@@ -454,7 +456,7 @@
         "mode": "contrarian"
       },
       "earnings": null,
-      "drawdown_pct": -0.1
+      "drawdown_pct": 0.0
     },
     "eurusd": {
       "title": "EURUSD",
@@ -865,11 +867,11 @@
       "title": "USOIL",
       "note": "",
       "conflict": {
-        "state": "unclear",
+        "state": "conflicted",
         "macro": "leans bearish",
         "trend": "bullish",
-        "text": "Price trend is flat or the macro reading is weak, so the two neither confirm nor contradict each other.",
-        "macro_net": -0.142,
+        "text": "Conflicted: the macro drivers read leans bearish, but the price trend is bullish. When the two disagree, treat the bias with extra caution.",
+        "macro_net": -0.191,
         "trend_score": 1.0
       },
       "price": {
@@ -877,11 +879,11 @@
         "note": "0.0% below its 90-day high"
       },
       "bias": {
-        "score": 54,
-        "net": 0.071,
+        "score": 52,
+        "net": 0.03,
         "label": "neutral",
         "conviction": "weak",
-        "bearish_pts": 9.9,
+        "bearish_pts": 13.4,
         "bullish_pts": 16.0
       },
       "headline": "USOIL reads neutral: the drivers roughly cancel out.",
@@ -903,9 +905,9 @@
           "name": "Dollar link",
           "short": "the dollar",
           "weight": 16,
-          "score": -0.544,
-          "points": -8.7,
-          "reading": "DXY (rebuilt) +1.1% in two weeks. Oil is priced in dollars, so a stronger dollar tends to weigh on it.",
+          "score": -0.761,
+          "points": -12.2,
+          "reading": "DXY (rebuilt) +1.5% in two weeks. Oil is priced in dollars, so a stronger dollar tends to weigh on it.",
           "why": "Oil is priced in dollars, so a stronger dollar makes it dearer for buyers using other currencies.",
           "source": "Alpha Vantage FX_DAILY (via the dollar index)",
           "status": "auto"
