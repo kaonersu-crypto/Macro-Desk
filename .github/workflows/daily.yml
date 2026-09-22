@@ -1,7 +1,7 @@
 name: Daily macro bias
 on:
   schedule:
-    - cron: "30 22 * * 1-5"   # 22:30 UTC on weekdays, after the US close
+           - cron: "0 8 * * 2-6"   # 22:30 UTC on weekdays, after the US close
   workflow_dispatch:
 permissions:
   contents: write
