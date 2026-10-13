@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-10-09",
-  "generated": "2026-10-10T08:13Z",
+  "as_of": "2026-10-12",
+  "generated": "2026-10-13T08:17Z",
   "assets": {
     "gold": {
       "title": "Gold",
@@ -10,19 +10,19 @@
         "macro": "leans bearish",
         "trend": "bearish",
         "text": "Macro and price trend agree: both are bearish.",
-        "macro_net": -0.275,
-        "trend_score": -0.765
+        "macro_net": -0.288,
+        "trend_score": -0.685
       },
       "price": {
-        "value": "$4,146",
-        "note": "11.5% below the 90-day high"
+        "value": "$4,202",
+        "note": "10.3% below the 90-day high"
       },
       "bias": {
         "score": 34,
-        "net": -0.324,
+        "net": -0.328,
         "label": "bearish",
         "conviction": "moderate",
-        "bearish_pts": 37.5,
+        "bearish_pts": 38.0,
         "bullish_pts": 5.2
       },
       "headline": "Gold reads bearish: real yields and the dollar outweigh war and fiscal risk.",
@@ -56,9 +56,9 @@
           "name": "US dollar",
           "short": "the dollar",
           "weight": 13,
-          "score": -0.599,
-          "points": -7.8,
-          "reading": "DXY (rebuilt) 102.23, +1.2% in two weeks.",
+          "score": -0.691,
+          "points": -9.0,
+          "reading": "DXY (rebuilt) 102.59, +1.4% in two weeks.",
           "why": "Gold is priced in dollars. A stronger dollar makes it dearer for buyers in other currencies.",
           "source": "Alpha Vantage FX_DAILY, index rebuilt from six pairs",
           "status": "auto"
@@ -92,9 +92,9 @@
           "name": "Price vs recent high",
           "short": "price action",
           "weight": 10,
-          "score": -0.765,
-          "points": -7.6,
-          "reading": "Gold $4,146, 11.5% below its 90-day high.",
+          "score": -0.685,
+          "points": -6.9,
+          "reading": "Gold $4,202, 10.3% below its 90-day high.",
           "why": "Checks whether the market is agreeing with the fundamentals.",
           "source": "Alpha Vantage GOLD_SILVER_HISTORY",
           "status": "auto"
@@ -134,7 +134,7 @@
         "mode": "contrarian"
       },
       "earnings": null,
-      "drawdown_pct": -11.5
+      "drawdown_pct": -10.3
     },
     "nasdaq": {
       "title": "Nasdaq-100",
@@ -145,19 +145,19 @@
         "trend": "bullish",
         "text": "Conflicted: the macro drivers read leans bearish, but the price trend is bullish. When the two disagree, treat the bias with extra caution.",
         "macro_net": -0.243,
-        "trend_score": 0.781
+        "trend_score": 0.641
       },
       "price": {
-        "value": "30,883",
-        "note": "1.1% below the recent high"
+        "value": "30,665",
+        "note": "1.8% below the recent high"
       },
       "bias": {
         "score": 41,
-        "net": -0.182,
+        "net": -0.19,
         "label": "leans bearish",
         "conviction": "weak",
-        "bearish_pts": 26.5,
-        "bullish_pts": 8.3
+        "bearish_pts": 26.4,
+        "bullish_pts": 7.4
       },
       "headline": "Nasdaq-100 reads leans bearish: real yields and the Fed path outweigh price action.",
       "drivers": [
@@ -190,9 +190,9 @@
           "name": "Risk appetite",
           "short": "risk appetite",
           "weight": 14,
-          "score": -0.033,
-          "points": -0.5,
-          "reading": "VIX 15.4 (−0.3), high-yield spread 3.15% (+35bp).",
+          "score": -0.03,
+          "points": -0.4,
+          "reading": "VIX 14.8 (−0.0), high-yield spread 3.15% (+35bp).",
           "why": "Low volatility and tight credit spreads mean investors are comfortable owning risk.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -250,9 +250,9 @@
           "name": "Price vs recent high",
           "short": "price action",
           "weight": 6,
-          "score": 0.781,
-          "points": 4.7,
-          "reading": "Nasdaq-100 30,883, 1.1% below its recent high.",
+          "score": 0.641,
+          "points": 3.8,
+          "reading": "Nasdaq-100 30,665, 1.8% below its recent high.",
           "why": "Trend confirmation. Trading within a few percent of the recent high counts as bullish.",
           "source": "FRED NASDAQ100",
           "status": "auto"
@@ -271,7 +271,7 @@
         }
       ],
       "flags": [
-        "The macro drivers lean bearish, yet the Nasdaq-100 is only 1.1% below its recent high. The market is looking through higher rates, most likely on AI earnings. That gap can close either way."
+        "The macro drivers lean bearish, yet the Nasdaq-100 is only 1.8% below its recent high. The market is looking through higher rates, most likely on AI earnings. That gap can close either way."
       ],
       "cot": {
         "group": "Leveraged funds",
@@ -294,7 +294,7 @@
         "mode": "contrarian"
       },
       "earnings": null,
-      "drawdown_pct": -1.1
+      "drawdown_pct": -1.8
     },
     "dxy": {
       "title": "Dollar (DXY)",
@@ -305,19 +305,19 @@
         "trend": "bullish",
         "text": "Macro and price trend agree: both are bullish.",
         "macro_net": 0.168,
-        "trend_score": 0.569
+        "trend_score": 0.614
       },
       "price": {
-        "value": "102.23",
+        "value": "102.59",
         "note": "0.0% below the seven-week high"
       },
       "bias": {
         "score": 60,
-        "net": 0.192,
+        "net": 0.194,
         "label": "leans bullish",
         "conviction": "weak",
         "bearish_pts": 3.0,
-        "bullish_pts": 22.2
+        "bullish_pts": 22.4
       },
       "headline": "Dollar (DXY) reads leans bullish: the rate gap and US real yields outweigh fiscal worries.",
       "drivers": [
@@ -362,9 +362,9 @@
           "name": "Safe-haven demand",
           "short": "safe-haven demand",
           "weight": 10,
-          "score": 0.016,
-          "points": 0.2,
-          "reading": "VIX 15.4 (−0.3), high-yield spread 3.15% (+35bp). Calm markets mean less safe-haven demand for the dollar.",
+          "score": 0.015,
+          "points": 0.1,
+          "reading": "VIX 14.8 (−0.0), high-yield spread 3.15% (+35bp). Calm markets mean less safe-haven demand for the dollar.",
           "why": "The dollar tends to catch a bid when volatility and credit spreads jump. Calm markets take that support away.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -410,9 +410,9 @@
           "name": "Price trend",
           "short": "price trend",
           "weight": 6,
-          "score": 0.569,
-          "points": 3.4,
-          "reading": "DXY 102.23, 0.0% below its seven-week high, +0.3% over the week.",
+          "score": 0.614,
+          "points": 3.7,
+          "reading": "DXY 102.59, 0.0% below its seven-week high, +0.5% over the week.",
           "why": "Trend confirmation. A rising index close to its recent high counts as bullish.",
           "source": "Alpha Vantage FX_DAILY, index rebuilt from six pairs",
           "status": "auto"
@@ -454,7 +454,7 @@
         "mode": "contrarian"
       },
       "earnings": null,
-      "drawdown_pct": -0.0
+      "drawdown_pct": 0.0
     },
     "eurusd": {
       "title": "EURUSD",
@@ -465,18 +465,18 @@
         "trend": "bearish",
         "text": "Price trend is flat or the macro reading is weak, so the two neither confirm nor contradict each other.",
         "macro_net": -0.129,
-        "trend_score": -0.654
+        "trend_score": -0.702
       },
       "price": {
-        "value": "1.1201",
-        "note": "−0.5% over the week, −3.4% over four weeks"
+        "value": "1.1153",
+        "note": "−0.6% over the week, −3.4% over four weeks"
       },
       "bias": {
         "score": 40,
-        "net": -0.192,
+        "net": -0.198,
         "label": "leans bearish",
         "conviction": "weak",
-        "bearish_pts": 25.8,
+        "bearish_pts": 26.3,
         "bullish_pts": 6.6
       },
       "headline": "EURUSD reads leans bearish: the rate gap and price trend outweigh fund positioning.",
@@ -522,9 +522,9 @@
           "name": "Risk mood",
           "short": "the risk mood",
           "weight": 10,
-          "score": -0.016,
-          "points": -0.2,
-          "reading": "VIX 15.4 (−0.3), high-yield spread 3.15% (+35bp). Calm markets ease demand for the dollar as a safe haven.",
+          "score": -0.015,
+          "points": -0.1,
+          "reading": "VIX 14.8 (−0.0), high-yield spread 3.15% (+35bp). Calm markets ease demand for the dollar as a safe haven.",
           "why": "Calm markets ease demand for the dollar as a safe haven.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -546,9 +546,9 @@
           "name": "Price trend",
           "short": "price trend",
           "weight": 12,
-          "score": -0.654,
-          "points": -7.8,
-          "reading": "EURUSD 1.1201, −0.5% over the week, −3.4% over four weeks.",
+          "score": -0.702,
+          "points": -8.4,
+          "reading": "EURUSD 1.1153, −0.6% over the week, −3.4% over four weeks.",
           "why": "Trend confirmation. The score blends the last week and the last four weeks.",
           "source": "Alpha Vantage FX_DAILY",
           "status": "auto"
@@ -601,19 +601,19 @@
         "trend": "bullish",
         "text": "Macro and price trend agree: both are bullish.",
         "macro_net": 0.254,
-        "trend_score": 0.601
+        "trend_score": 0.61
       },
       "price": {
-        "value": "158.31",
-        "note": "+0.3% over the week, +3.1% over four weeks"
+        "value": "158.61",
+        "note": "+0.4% over the week, +2.8% over four weeks"
       },
       "bias": {
         "score": 65,
-        "net": 0.296,
+        "net": 0.297,
         "label": "bullish",
         "conviction": "moderate",
         "bearish_pts": 1.3,
-        "bullish_pts": 30.9
+        "bullish_pts": 31.0
       },
       "headline": "USDJPY reads bullish: the rate gap and price trend outweigh the policy path.",
       "drivers": [
@@ -658,9 +658,9 @@
           "name": "Risk mood",
           "short": "the risk mood",
           "weight": 10,
-          "score": -0.023,
+          "score": -0.021,
           "points": -0.2,
-          "reading": "VIX 15.4 (−0.3), high-yield spread 3.15% (+35bp). Calm markets weaken the yen as a safe haven.",
+          "reading": "VIX 14.8 (−0.0), high-yield spread 3.15% (+35bp). Calm markets weaken the yen as a safe haven.",
           "why": "Calm markets weaken the yen as a safe haven.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -682,9 +682,9 @@
           "name": "Price trend",
           "short": "price trend",
           "weight": 12,
-          "score": 0.601,
-          "points": 7.2,
-          "reading": "USDJPY 158.31, +0.3% over the week, +3.1% over four weeks.",
+          "score": 0.61,
+          "points": 7.3,
+          "reading": "USDJPY 158.61, +0.4% over the week, +2.8% over four weeks.",
           "why": "Trend confirmation. The score blends the last week and the last four weeks.",
           "source": "Alpha Vantage FX_DAILY",
           "status": "auto"
@@ -736,19 +736,19 @@
         "macro": "leans bearish",
         "trend": "bearish",
         "text": "Macro and price trend agree: both are bearish.",
-        "macro_net": -0.165,
-        "trend_score": -0.379
+        "macro_net": -0.164,
+        "trend_score": -0.39
       },
       "price": {
-        "value": "1.3231",
+        "value": "1.3206",
         "note": "−0.1% over the week, −2.1% over four weeks"
       },
       "bias": {
         "score": 40,
-        "net": -0.19,
+        "net": -0.192,
         "label": "leans bearish",
         "conviction": "weak",
-        "bearish_pts": 26.0,
+        "bearish_pts": 26.2,
         "bullish_pts": 7.0
       },
       "headline": "GBPUSD reads leans bearish: the rate gap and US real yields outweigh fund positioning.",
@@ -794,9 +794,9 @@
           "name": "Risk mood",
           "short": "the risk mood",
           "weight": 10,
-          "score": -0.02,
+          "score": -0.018,
           "points": -0.2,
-          "reading": "VIX 15.4 (−0.3), high-yield spread 3.15% (+35bp). Calm markets ease demand for the dollar as a safe haven.",
+          "reading": "VIX 14.8 (−0.0), high-yield spread 3.15% (+35bp). Calm markets ease demand for the dollar as a safe haven.",
           "why": "Calm markets ease demand for the dollar as a safe haven.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -818,9 +818,9 @@
           "name": "Price trend",
           "short": "price trend",
           "weight": 12,
-          "score": -0.379,
-          "points": -4.5,
-          "reading": "GBPUSD 1.3231, −0.1% over the week, −2.1% over four weeks.",
+          "score": -0.39,
+          "points": -4.7,
+          "reading": "GBPUSD 1.3206, −0.1% over the week, −2.1% over four weeks.",
           "why": "Trend confirmation. The score blends the last week and the last four weeks.",
           "source": "Alpha Vantage FX_DAILY",
           "status": "auto"
@@ -870,7 +870,7 @@
         "macro": "leans bearish",
         "trend": "flat",
         "text": "Price trend is flat or the macro reading is weak, so the two neither confirm nor contradict each other.",
-        "macro_net": -0.135,
+        "macro_net": -0.156,
         "trend_score": -0.015
       },
       "price": {
@@ -879,11 +879,11 @@
       },
       "bias": {
         "score": 44,
-        "net": -0.112,
+        "net": -0.13,
         "label": "leans bearish",
         "conviction": "weak",
-        "bearish_pts": 9.8,
-        "bullish_pts": 0.2
+        "bearish_pts": 11.3,
+        "bullish_pts": 0.1
       },
       "headline": "USOIL reads leans bearish: the dollar and price trend outweigh risk mood.",
       "drivers": [
@@ -904,9 +904,9 @@
           "name": "Dollar link",
           "short": "the dollar",
           "weight": 16,
-          "score": -0.599,
-          "points": -9.6,
-          "reading": "DXY (rebuilt) +1.2% in two weeks. Oil is priced in dollars, so a stronger dollar tends to weigh on it.",
+          "score": -0.691,
+          "points": -11.1,
+          "reading": "DXY (rebuilt) +1.4% in two weeks. Oil is priced in dollars, so a stronger dollar tends to weigh on it.",
           "why": "Oil is priced in dollars, so a stronger dollar makes it dearer for buyers using other currencies.",
           "source": "Alpha Vantage FX_DAILY (via the dollar index)",
           "status": "auto"
@@ -928,9 +928,9 @@
           "name": "Risk mood",
           "short": "risk mood",
           "weight": 12,
-          "score": 0.013,
-          "points": 0.2,
-          "reading": "VIX 15.4 (−0.3), high-yield spread 3.15% (+35bp). Calmer markets usually go with steadier growth expectations and firmer oil demand.",
+          "score": 0.012,
+          "points": 0.1,
+          "reading": "VIX 14.8 (−0.0), high-yield spread 3.15% (+35bp). Calmer markets usually go with steadier growth expectations and firmer oil demand.",
           "why": "Calmer markets usually go with steadier growth expectations and firmer oil demand.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
