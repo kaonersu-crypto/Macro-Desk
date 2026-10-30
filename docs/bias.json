@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-10-28",
-  "generated": "2026-10-29T15:00Z",
+  "as_of": "2026-10-29",
+  "generated": "2026-10-30T14:53Z",
   "assets": {
     "gold": {
       "title": "Gold",
@@ -10,31 +10,31 @@
         "macro": "neutral",
         "trend": "bearish",
         "text": "Price trend is flat or the macro reading is weak, so the two neither confirm nor contradict each other.",
-        "macro_net": 0.04,
-        "trend_score": -0.891
+        "macro_net": -0.009,
+        "trend_score": -0.899
       },
       "price": {
-        "value": "$4,058",
-        "note": "13.4% below the 90-day high"
+        "value": "$4,052",
+        "note": "13.5% below the 90-day high"
       },
       "bias": {
-        "score": 47,
-        "net": -0.053,
-        "label": "neutral",
+        "score": 45,
+        "net": -0.098,
+        "label": "leans bearish",
         "conviction": "weak",
-        "bearish_pts": 16.7,
-        "bullish_pts": 11.4
+        "bearish_pts": 17.5,
+        "bullish_pts": 7.6
       },
-      "headline": "Gold reads neutral: the drivers roughly cancel out.",
+      "headline": "Gold reads leans bearish: price action and the Fed path outweigh war and fiscal risk.",
       "drivers": [
         {
           "key": "real_yield",
           "name": "Real yields",
           "short": "real yields",
           "weight": 27,
-          "score": 0.07,
-          "points": 1.9,
-          "reading": "10-year TIPS yield 2.64%, −24bp in two weeks.",
+          "score": -0.078,
+          "points": -2.1,
+          "reading": "10-year TIPS yield 2.67%, −17bp in two weeks.",
           "why": "Gold pays no interest, so higher inflation-adjusted yields raise the cost of holding it.",
           "source": "FRED DFII10",
           "status": "auto"
@@ -44,9 +44,9 @@
           "name": "Fed path",
           "short": "the Fed path",
           "weight": 18,
-          "score": -0.388,
-          "points": -7.0,
-          "reading": "Fed funds 3.75–4.00%, last move +25bp. 2-year yield 4.70%, −9bp in two weeks.",
+          "score": -0.312,
+          "points": -5.6,
+          "reading": "Fed funds 3.75–4.00%, last move +25bp. 2-year yield 4.67%, −15bp in two weeks.",
           "why": "A tightening Fed and rising 2-year yields pull money toward cash and bonds.",
           "source": "FRED DFEDTARU, DGS2; guidance from manual.json",
           "status": "auto"
@@ -56,9 +56,9 @@
           "name": "US dollar",
           "short": "the dollar",
           "weight": 13,
-          "score": 0.189,
-          "points": 2.5,
-          "reading": "DXY (rebuilt) 102.14, −0.4% in two weeks.",
+          "score": 0.048,
+          "points": 0.6,
+          "reading": "DXY (rebuilt) 101.90, −0.1% in two weeks.",
           "why": "Gold is priced in dollars. A stronger dollar makes it dearer for buyers in other currencies.",
           "source": "Alpha Vantage FX_DAILY, index rebuilt from six pairs",
           "status": "auto"
@@ -70,7 +70,7 @@
           "weight": 9,
           "score": 0.2,
           "points": 1.8,
-          "reading": "10-year breakeven 2.38%, +3bp in two weeks.",
+          "reading": "10-year breakeven 2.35%, +3bp in two weeks.",
           "why": "Rising breakevens support gold as an inflation hedge. Steady ones mean yields are rising in real terms, not on inflation fears.",
           "source": "FRED T10YIE",
           "status": "auto"
@@ -92,9 +92,9 @@
           "name": "Price vs recent high",
           "short": "price action",
           "weight": 10,
-          "score": -0.891,
-          "points": -8.9,
-          "reading": "Gold $4,058, 13.4% below its 90-day high.",
+          "score": -0.899,
+          "points": -9.0,
+          "reading": "Gold $4,052, 13.5% below its 90-day high.",
           "why": "Checks whether the market is agreeing with the fundamentals.",
           "source": "Alpha Vantage GOLD_SILVER_HISTORY",
           "status": "auto"
@@ -134,7 +134,7 @@
         "mode": "contrarian"
       },
       "earnings": null,
-      "drawdown_pct": -13.4
+      "drawdown_pct": -13.5
     },
     "nasdaq": {
       "title": "Nasdaq-100",
@@ -144,31 +144,31 @@
         "macro": "leans bearish",
         "trend": "flat",
         "text": "Price trend is flat or the macro reading is weak, so the two neither confirm nor contradict each other.",
-        "macro_net": -0.143,
-        "trend_score": 0.096
+        "macro_net": -0.225,
+        "trend_score": -0.167
       },
       "price": {
-        "value": "29,813",
-        "note": "4.5% below the recent high"
+        "value": "29,403",
+        "note": "5.8% below the recent high"
       },
       "bias": {
-        "score": 44,
-        "net": -0.128,
+        "score": 39,
+        "net": -0.221,
         "label": "leans bearish",
         "conviction": "weak",
-        "bearish_pts": 21.3,
-        "bullish_pts": 8.6
+        "bearish_pts": 26.5,
+        "bullish_pts": 4.4
       },
-      "headline": "Nasdaq-100 reads leans bearish: the oil and war shock and the Fed path outweigh AI earnings momentum.",
+      "headline": "Nasdaq-100 reads leans bearish: the oil and war shock and liquidity outweigh AI earnings momentum.",
       "drivers": [
         {
           "key": "real_yield",
           "name": "Real yields",
           "short": "real yields",
           "weight": 22,
-          "score": 0.07,
-          "points": 1.5,
-          "reading": "10-year TIPS yield 2.64%, −24bp in two weeks.",
+          "score": -0.078,
+          "points": -1.7,
+          "reading": "10-year TIPS yield 2.67%, −17bp in two weeks.",
           "why": "Growth stocks are valued on distant earnings. Higher real yields discount those earnings harder.",
           "source": "FRED DFII10",
           "status": "auto"
@@ -178,9 +178,9 @@
           "name": "Fed path",
           "short": "the Fed path",
           "weight": 14,
-          "score": -0.388,
-          "points": -5.4,
-          "reading": "Fed funds 3.75–4.00%, last move +25bp. 2-year yield 4.70%, −9bp in two weeks.",
+          "score": -0.312,
+          "points": -4.4,
+          "reading": "Fed funds 3.75–4.00%, last move +25bp. 2-year yield 4.67%, −15bp in two weeks.",
           "why": "Tighter policy raises borrowing costs and competes with stocks for money.",
           "source": "FRED DFEDTARU, DGS2; guidance from manual.json",
           "status": "auto"
@@ -190,9 +190,9 @@
           "name": "Risk appetite",
           "short": "risk appetite",
           "weight": 14,
-          "score": 0.204,
-          "points": 2.9,
-          "reading": "VIX 16.9 (+0.0), high-yield spread 3.14% (−11bp).",
+          "score": 0.054,
+          "points": 0.8,
+          "reading": "VIX 17.2 (+0.7), high-yield spread 3.26% (+3bp).",
           "why": "Low volatility and tight credit spreads mean investors are comfortable owning risk.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -202,9 +202,9 @@
           "name": "Net liquidity",
           "short": "liquidity",
           "weight": 9,
-          "score": -0.302,
-          "points": -2.7,
-          "reading": "Net liquidity $5,801B, 13th percentile of five years, +31B over four weeks.",
+          "score": -0.685,
+          "points": -6.2,
+          "reading": "Net liquidity $5,746B, 8th percentile of five years, −37B over four weeks.",
           "why": "Fed assets minus the Treasury cash account and reverse repos. More liquidity has tended to lift risk assets.",
           "source": "FRED WALCL minus WTREGEN minus RRPONTSYD",
           "status": "auto"
@@ -250,9 +250,9 @@
           "name": "Price vs recent high",
           "short": "price action",
           "weight": 6,
-          "score": 0.096,
-          "points": 0.6,
-          "reading": "Nasdaq-100 29,813, 4.5% below its recent high.",
+          "score": -0.167,
+          "points": -1.0,
+          "reading": "Nasdaq-100 29,403, 5.8% below its recent high.",
           "why": "Trend confirmation. Trading within a few percent of the recent high counts as bullish.",
           "source": "FRED NASDAQ100",
           "status": "auto"
@@ -294,7 +294,7 @@
         "mode": "contrarian"
       },
       "earnings": null,
-      "drawdown_pct": -4.5
+      "drawdown_pct": -5.8
     },
     "dxy": {
       "title": "Dollar (DXY)",
@@ -304,20 +304,20 @@
         "macro": "leans bullish",
         "trend": "bullish",
         "text": "Macro and price trend agree: both are bullish.",
-        "macro_net": 0.15,
-        "trend_score": 0.536
+        "macro_net": 0.158,
+        "trend_score": 0.452
       },
       "price": {
-        "value": "102.14",
-        "note": "0.4% below the seven-week high"
+        "value": "101.90",
+        "note": "0.7% below the seven-week high"
       },
       "bias": {
         "score": 59,
-        "net": 0.173,
+        "net": 0.176,
         "label": "leans bullish",
         "conviction": "weak",
-        "bearish_pts": 5.3,
-        "bullish_pts": 22.7
+        "bearish_pts": 3.9,
+        "bullish_pts": 21.4
       },
       "headline": "Dollar (DXY) reads leans bullish: the oil shock and the rate gap outweigh fiscal worries.",
       "drivers": [
@@ -338,9 +338,9 @@
           "name": "Expected policy path",
           "short": "the policy path",
           "weight": 20,
-          "score": 0.138,
-          "points": 2.8,
-          "reading": "US 2-year yield −9bp in two weeks. Futures give the Fed better than even odds of another hike on 28 October. The ECB is not expected to move before December, and the BoJ's split vote points to gradual tightening.",
+          "score": 0.062,
+          "points": 1.2,
+          "reading": "US 2-year yield −15bp in two weeks. Futures give the Fed better than even odds of another hike on 28 October. The ECB is not expected to move before December, and the BoJ's split vote points to gradual tightening.",
           "why": "Markets trade where central banks are heading, not just where rates are. A Fed priced for more hikes than the ECB and BoJ supports the dollar. The edge is entered by hand.",
           "source": "FRED DGS2; edge from manual.json",
           "status": "manual"
@@ -350,9 +350,9 @@
           "name": "US real yields",
           "short": "US real yields",
           "weight": 10,
-          "score": -0.07,
-          "points": -0.7,
-          "reading": "10-year TIPS yield 2.64%, −24bp in two weeks. Higher US real yields draw in foreign money.",
+          "score": 0.078,
+          "points": 0.8,
+          "reading": "10-year TIPS yield 2.67%, −17bp in two weeks. Higher US real yields draw in foreign money.",
           "why": "Higher inflation-adjusted returns on Treasuries draw in foreign money.",
           "source": "FRED DFII10",
           "status": "auto"
@@ -362,9 +362,9 @@
           "name": "Safe-haven demand",
           "short": "safe-haven demand",
           "weight": 10,
-          "score": -0.102,
-          "points": -1.0,
-          "reading": "VIX 16.9 (+0.0), high-yield spread 3.14% (−11bp). Calm markets mean less safe-haven demand for the dollar.",
+          "score": -0.027,
+          "points": -0.3,
+          "reading": "VIX 17.2 (+0.7), high-yield spread 3.26% (+3bp). Calm markets mean less safe-haven demand for the dollar.",
           "why": "The dollar tends to catch a bid when volatility and credit spreads jump. Calm markets take that support away.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -410,9 +410,9 @@
           "name": "Price trend",
           "short": "price trend",
           "weight": 6,
-          "score": 0.536,
-          "points": 3.2,
-          "reading": "DXY 102.14, 0.4% below its seven-week high, +0.4% over the week.",
+          "score": 0.452,
+          "points": 2.7,
+          "reading": "DXY 101.90, 0.7% below its seven-week high, +0.3% over the week.",
           "why": "Trend confirmation. A rising index close to its recent high counts as bullish.",
           "source": "Alpha Vantage FX_DAILY, index rebuilt from six pairs",
           "status": "auto"
@@ -454,7 +454,7 @@
         "mode": "contrarian"
       },
       "earnings": null,
-      "drawdown_pct": -0.4
+      "drawdown_pct": -0.7
     },
     "eurusd": {
       "title": "EURUSD",
@@ -462,22 +462,22 @@
       "conflict": {
         "state": "unclear",
         "macro": "neutral",
-        "trend": "bearish",
+        "trend": "flat",
         "text": "Price trend is flat or the macro reading is weak, so the two neither confirm nor contradict each other.",
-        "macro_net": -0.074,
-        "trend_score": -0.496
+        "macro_net": -0.084,
+        "trend_score": -0.2
       },
       "price": {
-        "value": "1.1152",
-        "note": "−0.7% over the week, −1.6% over four weeks"
+        "value": "1.1178",
+        "note": "−0.3% over the week, −0.6% over four weeks"
       },
       "bias": {
-        "score": 44,
-        "net": -0.125,
+        "score": 45,
+        "net": -0.098,
         "label": "leans bearish",
         "conviction": "weak",
-        "bearish_pts": 22.3,
-        "bullish_pts": 9.8
+        "bearish_pts": 18.8,
+        "bullish_pts": 9.1
       },
       "headline": "EURUSD reads leans bearish: the rate gap and the oil shock outweigh fund positioning.",
       "drivers": [
@@ -498,9 +498,9 @@
           "name": "Expected policy path",
           "short": "the policy path",
           "weight": 22,
-          "score": -0.038,
-          "points": -0.8,
-          "reading": "US 2-year yield −9bp in two weeks. The ECB hiked on 10 September, but markets price at most one more hike this year while the Fed is signalling another.",
+          "score": 0.038,
+          "points": 0.8,
+          "reading": "US 2-year yield −15bp in two weeks. The ECB hiked on 10 September, but markets price at most one more hike this year while the Fed is signalling another.",
           "why": "Markets trade where central banks are heading. The regional edge is entered by hand and blended with the move in US 2-year yields.",
           "source": "FRED DGS2; regional edge from manual.json",
           "status": "manual"
@@ -510,9 +510,9 @@
           "name": "US real yields",
           "short": "US real yields",
           "weight": 12,
-          "score": 0.07,
-          "points": 0.8,
-          "reading": "10-year TIPS yield 2.64%, −24bp in two weeks. Higher US real yields pull money out of the euro.",
+          "score": -0.078,
+          "points": -0.9,
+          "reading": "10-year TIPS yield 2.67%, −17bp in two weeks. Higher US real yields pull money out of the euro.",
           "why": "Higher inflation-adjusted returns on Treasuries draw in foreign money and lift the dollar.",
           "source": "FRED DFII10",
           "status": "auto"
@@ -522,9 +522,9 @@
           "name": "Risk mood",
           "short": "the risk mood",
           "weight": 10,
-          "score": 0.102,
-          "points": 1.0,
-          "reading": "VIX 16.9 (+0.0), high-yield spread 3.14% (−11bp). Calm markets ease demand for the dollar as a safe haven.",
+          "score": 0.027,
+          "points": 0.3,
+          "reading": "VIX 17.2 (+0.7), high-yield spread 3.26% (+3bp). Calm markets ease demand for the dollar as a safe haven.",
           "why": "Calm markets ease demand for the dollar as a safe haven.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -546,9 +546,9 @@
           "name": "Price trend",
           "short": "price trend",
           "weight": 12,
-          "score": -0.496,
-          "points": -6.0,
-          "reading": "EURUSD 1.1152, −0.7% over the week, −1.6% over four weeks.",
+          "score": -0.2,
+          "points": -2.4,
+          "reading": "EURUSD 1.1178, −0.3% over the week, −0.6% over four weeks.",
           "why": "Trend confirmation. The score blends the last week and the last four weeks.",
           "source": "Alpha Vantage FX_DAILY",
           "status": "auto"
@@ -600,22 +600,22 @@
         "macro": "leans bullish",
         "trend": "flat",
         "text": "Price trend is flat or the macro reading is weak, so the two neither confirm nor contradict each other.",
-        "macro_net": 0.249,
-        "trend_score": -0.02
+        "macro_net": 0.238,
+        "trend_score": 0.158
       },
       "price": {
-        "value": "157.82",
-        "note": "−0.2% over the week, +0.3% over four weeks"
+        "value": "157.69",
+        "note": "+0.6% over the week, −0.2% over four weeks"
       },
       "bias": {
         "score": 61,
-        "net": 0.217,
+        "net": 0.229,
         "label": "leans bullish",
         "conviction": "weak",
-        "bearish_pts": 1.3,
-        "bullish_pts": 23.0
+        "bearish_pts": 1.9,
+        "bullish_pts": 24.8
       },
-      "headline": "USDJPY reads leans bullish: the rate gap and the oil shock outweigh US real yields.",
+      "headline": "USDJPY reads leans bullish: the rate gap and the oil shock outweigh the policy path.",
       "drivers": [
         {
           "key": "rate_gap",
@@ -634,9 +634,9 @@
           "name": "Expected policy path",
           "short": "the policy path",
           "weight": 22,
-          "score": -0.012,
-          "points": -0.3,
-          "reading": "US 2-year yield −9bp in two weeks. The BoJ raised rates to 1.25% and signalled more, but the gap to US rates is still wide.",
+          "score": -0.088,
+          "points": -1.9,
+          "reading": "US 2-year yield −15bp in two weeks. The BoJ raised rates to 1.25% and signalled more, but the gap to US rates is still wide.",
           "why": "Markets trade where central banks are heading. The regional edge is entered by hand and blended with the move in US 2-year yields.",
           "source": "FRED DGS2; regional edge from manual.json",
           "status": "manual"
@@ -646,9 +646,9 @@
           "name": "US real yields",
           "short": "US real yields",
           "weight": 12,
-          "score": -0.07,
-          "points": -0.8,
-          "reading": "10-year TIPS yield 2.64%, −24bp in two weeks. Higher US real yields widen the return gap over the yen.",
+          "score": 0.078,
+          "points": 0.9,
+          "reading": "10-year TIPS yield 2.67%, −17bp in two weeks. Higher US real yields widen the return gap over the yen.",
           "why": "Higher inflation-adjusted returns on Treasuries draw in foreign money and lift the dollar.",
           "source": "FRED DFII10",
           "status": "auto"
@@ -658,9 +658,9 @@
           "name": "Risk mood",
           "short": "the risk mood",
           "weight": 10,
-          "score": 0.143,
-          "points": 1.4,
-          "reading": "VIX 16.9 (+0.0), high-yield spread 3.14% (−11bp). Calm markets weaken the yen as a safe haven.",
+          "score": 0.038,
+          "points": 0.4,
+          "reading": "VIX 17.2 (+0.7), high-yield spread 3.26% (+3bp). Calm markets weaken the yen as a safe haven.",
           "why": "Calm markets weaken the yen as a safe haven.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -682,9 +682,9 @@
           "name": "Price trend",
           "short": "price trend",
           "weight": 12,
-          "score": -0.02,
-          "points": -0.2,
-          "reading": "USDJPY 157.82, −0.2% over the week, +0.3% over four weeks.",
+          "score": 0.158,
+          "points": 1.9,
+          "reading": "USDJPY 157.69, +0.6% over the week, −0.2% over four weeks.",
           "why": "Trend confirmation. The score blends the last week and the last four weeks.",
           "source": "Alpha Vantage FX_DAILY",
           "status": "auto"
@@ -736,22 +736,22 @@
         "macro": "leans bearish",
         "trend": "flat",
         "text": "Price trend is flat or the macro reading is weak, so the two neither confirm nor contradict each other.",
-        "macro_net": -0.128,
-        "trend_score": -0.096
+        "macro_net": -0.14,
+        "trend_score": 0.163
       },
       "price": {
-        "value": "1.3325",
-        "note": "−0.5% over the week, +0.5% over four weeks"
+        "value": "1.3375",
+        "note": "−0.2% over the week, +1.3% over four weeks"
       },
       "bias": {
-        "score": 44,
-        "net": -0.124,
+        "score": 45,
+        "net": -0.103,
         "label": "leans bearish",
         "conviction": "weak",
-        "bearish_pts": 18.3,
-        "bullish_pts": 5.8
+        "bearish_pts": 18.0,
+        "bullish_pts": 7.7
       },
-      "headline": "GBPUSD reads leans bearish: the rate gap and the oil shock outweigh fund positioning.",
+      "headline": "GBPUSD reads leans bearish: the rate gap and the oil shock outweigh the policy path.",
       "drivers": [
         {
           "key": "rate_gap",
@@ -770,9 +770,9 @@
           "name": "Expected policy path",
           "short": "the policy path",
           "weight": 22,
-          "score": 0.062,
-          "points": 1.4,
-          "reading": "US 2-year yield −9bp in two weeks. The BoE held at 3.75% and warned a long Middle East conflict could warrant tighter policy, but the Fed is further ahead.",
+          "score": 0.138,
+          "points": 3.0,
+          "reading": "US 2-year yield −15bp in two weeks. The BoE held at 3.75% and warned a long Middle East conflict could warrant tighter policy, but the Fed is further ahead.",
           "why": "Markets trade where central banks are heading. The regional edge is entered by hand and blended with the move in US 2-year yields.",
           "source": "FRED DGS2; regional edge from manual.json",
           "status": "manual"
@@ -782,9 +782,9 @@
           "name": "US real yields",
           "short": "US real yields",
           "weight": 12,
-          "score": 0.07,
-          "points": 0.8,
-          "reading": "10-year TIPS yield 2.64%, −24bp in two weeks. Higher US real yields pull money out of sterling.",
+          "score": -0.078,
+          "points": -0.9,
+          "reading": "10-year TIPS yield 2.67%, −17bp in two weeks. Higher US real yields pull money out of sterling.",
           "why": "Higher inflation-adjusted returns on Treasuries draw in foreign money and lift the dollar.",
           "source": "FRED DFII10",
           "status": "auto"
@@ -794,9 +794,9 @@
           "name": "Risk mood",
           "short": "the risk mood",
           "weight": 10,
-          "score": 0.122,
-          "points": 1.2,
-          "reading": "VIX 16.9 (+0.0), high-yield spread 3.14% (−11bp). Calm markets ease demand for the dollar as a safe haven.",
+          "score": 0.033,
+          "points": 0.3,
+          "reading": "VIX 17.2 (+0.7), high-yield spread 3.26% (+3bp). Calm markets ease demand for the dollar as a safe haven.",
           "why": "Calm markets ease demand for the dollar as a safe haven.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -818,9 +818,9 @@
           "name": "Price trend",
           "short": "price trend",
           "weight": 12,
-          "score": -0.096,
-          "points": -1.2,
-          "reading": "GBPUSD 1.3325, −0.5% over the week, +0.5% over four weeks.",
+          "score": 0.163,
+          "points": 2.0,
+          "reading": "GBPUSD 1.3375, −0.2% over the week, +1.3% over four weeks.",
           "why": "Trend confirmation. The score blends the last week and the last four weeks.",
           "source": "Alpha Vantage FX_DAILY",
           "status": "auto"
@@ -870,7 +870,7 @@
         "macro": "neutral",
         "trend": "bullish",
         "text": "Price trend is flat or the macro reading is weak, so the two neither confirm nor contradict each other.",
-        "macro_net": 0.029,
+        "macro_net": 0.007,
         "trend_score": 0.698
       },
       "price": {
@@ -878,12 +878,12 @@
         "note": "6.0% below its 90-day high"
       },
       "bias": {
-        "score": 58,
-        "net": 0.154,
+        "score": 57,
+        "net": 0.136,
         "label": "leans bullish",
         "conviction": "weak",
-        "bearish_pts": 1.0,
-        "bullish_pts": 14.2
+        "bearish_pts": 0.3,
+        "bullish_pts": 12.0
       },
       "headline": "USOIL reads leans bullish: price trend and the dollar outweigh risk mood.",
       "drivers": [
@@ -904,9 +904,9 @@
           "name": "Dollar link",
           "short": "the dollar",
           "weight": 16,
-          "score": 0.189,
-          "points": 3.0,
-          "reading": "DXY (rebuilt) −0.4% in two weeks. Oil is priced in dollars, so a stronger dollar tends to weigh on it.",
+          "score": 0.048,
+          "points": 0.8,
+          "reading": "DXY (rebuilt) −0.1% in two weeks. Oil is priced in dollars, so a stronger dollar tends to weigh on it.",
           "why": "Oil is priced in dollars, so a stronger dollar makes it dearer for buyers using other currencies.",
           "source": "Alpha Vantage FX_DAILY (via the dollar index)",
           "status": "auto"
@@ -928,9 +928,9 @@
           "name": "Risk mood",
           "short": "risk mood",
           "weight": 12,
-          "score": -0.082,
-          "points": -1.0,
-          "reading": "VIX 16.9 (+0.0), high-yield spread 3.14% (−11bp). Calmer markets usually go with steadier growth expectations and firmer oil demand.",
+          "score": -0.022,
+          "points": -0.3,
+          "reading": "VIX 17.2 (+0.7), high-yield spread 3.26% (+3bp). Calmer markets usually go with steadier growth expectations and firmer oil demand.",
           "why": "Calmer markets usually go with steadier growth expectations and firmer oil demand.",
           "source": "FRED VIXCLS, BAMLH0A0HYM2",
           "status": "auto"
@@ -959,18 +959,18 @@
       "key": "real_yield",
       "name": "Real yields",
       "phrase": "real yields",
-      "gold": 0.07,
-      "nasdaq": 0.07,
-      "dxy": -0.07,
+      "gold": -0.078,
+      "nasdaq": -0.078,
+      "dxy": 0.078,
       "verdict": "mixed"
     },
     {
       "key": "fed_path",
       "name": "Fed path",
       "phrase": "the Fed path",
-      "gold": -0.388,
-      "nasdaq": -0.388,
-      "dxy": 0.138,
+      "gold": -0.312,
+      "nasdaq": -0.312,
+      "dxy": 0.062,
       "verdict": "agree"
     },
     {
@@ -995,7 +995,7 @@
     {
       "key": "eurusd",
       "name": "EURUSD",
-      "bias": 44,
+      "bias": 45,
       "label": "leans bearish",
       "conflict": "unclear"
     },
@@ -1009,7 +1009,7 @@
     {
       "key": "gbpusd",
       "name": "GBPUSD",
-      "bias": 44,
+      "bias": 45,
       "label": "leans bearish",
       "conflict": "unclear"
     }
