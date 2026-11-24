@@ -3256,5 +3256,82 @@
   "macro_net": -0.158,
   "trend": -0.931,
   "conflict": "aligned"
+ },
+ {
+  "date": "2026-11-23",
+  "asset": "dxy",
+  "bias": 59,
+  "net": 0.176,
+  "price": 104.33632802686024,
+  "cot_index": 46,
+  "macro_net": 0.144,
+  "trend": 0.682,
+  "conflict": "unclear"
+ },
+ {
+  "date": "2026-11-23",
+  "asset": "eurusd",
+  "bias": 42,
+  "net": -0.154,
+  "price": 1.0901,
+  "cot_index": 1,
+  "macro_net": -0.08,
+  "trend": -0.692,
+  "conflict": "unclear"
+ },
+ {
+  "date": "2026-11-23",
+  "asset": "gbpusd",
+  "bias": 37,
+  "net": -0.268,
+  "price": 1.3031,
+  "cot_index": 43,
+  "macro_net": -0.2,
+  "trend": -0.767,
+  "conflict": "aligned"
+ },
+ {
+  "date": "2026-11-23",
+  "asset": "gold",
+  "bias": 25,
+  "net": -0.5,
+  "price": 3630.5033438751,
+  "cot_index": 37,
+  "macro_net": -0.444,
+  "trend": -1.0,
+  "conflict": "aligned"
+ },
+ {
+  "date": "2026-11-23",
+  "asset": "nasdaq",
+  "bias": 29,
+  "net": -0.414,
+  "price": 26517.05,
+  "cot_index": 73,
+  "macro_net": -0.376,
+  "trend": -1.0,
+  "conflict": "aligned"
+ },
+ {
+  "date": "2026-11-23",
+  "asset": "usdjpy",
+  "bias": 57,
+  "net": 0.135,
+  "price": 159.0,
+  "cot_index": 60,
+  "macro_net": 0.143,
+  "trend": 0.073,
+  "conflict": "unclear"
+ },
+ {
+  "date": "2026-11-23",
+  "asset": "usoil",
+  "bias": 34,
+  "net": -0.325,
+  "price": 89.53,
+  "cot_index": null,
+  "macro_net": -0.186,
+  "trend": -0.931,
+  "conflict": "aligned"
  }
 ]
